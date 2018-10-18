@@ -32,10 +32,10 @@ class Welcome extends CI_Controller {
 		$user->setGroup($group);
 
 		// When you have set up your database, you can persist these entities:
-		// $em = $this->doctrine->em;
-		// $em->persist($group);
-		// $em->persist($user);
-		// $em->flush();
+		 $em = $this->doctrine->em;
+		 $em->persist($group);
+		 $em->persist($user);
+		 $em->flush();
 
 		$this->load->view('welcome_message', array(
 			'user' => $user,
