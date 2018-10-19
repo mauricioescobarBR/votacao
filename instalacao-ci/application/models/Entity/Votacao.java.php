@@ -1,12 +1,29 @@
-package br.edu.unipampa.app.domain;
+<?php
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+namespace Entity;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Objects;
 
-@Entity(name = "votacoes")
+/**
+ * Votacao Model
+ *
+ * @Entity
+ * @Table(name="votacoes")
+ */
+
+
+class Votacao
+{
+
+    /**
+     * @Id
+     * @Column(type="integer", nullable=false)
+     * @GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    private $votacaoAberta = false;
+    
+
 public class Votacao implements Serializable {
 
     @Id
