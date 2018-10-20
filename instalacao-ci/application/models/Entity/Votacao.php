@@ -29,12 +29,16 @@ class Votacao
      */
     private $urna;
 
+
+
+/**
+     * @OneToOne(targetEntity="ItemDePauta", cascade={"refresh"})
+     * @JoinColumn(name="itemdepauta_id", referencedColumnName="id")
+*/
+    private $itemDePauta;
+
 ///////////////////////
 /*
-    @OneToOne(cascade = CascadeType.REFRESH)
-    @JsonIgnore
-    private ItemDePauta itemDePauta;
-
     @OneToOne(cascade = CascadeType.ALL)
     private ResultadoDaVotacao resultado;
 

@@ -1,23 +1,28 @@
-package br.edu.unipampa.app.domain;
+<?php
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+namespace Entity;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
-@Entity(name = "itens_de_pauta")
-public class ItemDePauta implements Serializable, Comparable<ItemDePauta> {
+/**
+ * ItemDePauta Model
+ *
+ * @Entity
+ * @Table(name="itens_de_pauta")
+ */
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
+class ItemDePauta
+{
+
+    /**
+     * @Id
+     * @Column(type="integer", nullable=false)
+     * @GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+///////////
+/*
     @JsonIgnore
     @OneToOne(cascade = CascadeType.PERSIST, orphanRemoval = true)
     private Votacao primeiroTurno;
@@ -199,5 +204,5 @@ public class ItemDePauta implements Serializable, Comparable<ItemDePauta> {
         }
         return 0;
     }
-
+*/
 }
