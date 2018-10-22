@@ -21,24 +21,24 @@ class Votacao
      */
     private $id;
 
-    private $votacaoAberta = false;
-    
+    private $votacaoAberta = false;   
 
-public class Votacao implements Serializable {
+     /**
+     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"all"}, orphanRemoval=true)
+     * @JoinColumn(name="urna_id", referencedColumnName="id")
+     */
+    private $urna;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    private boolean votacaoAberta = false;
 
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-    private Urna urna;
+/**
+     * @OneToOne(targetEntity="ItemDePauta", cascade={"refresh"})
+     * @JoinColumn(name="itemdepauta_id", referencedColumnName="id")
+*/
+    private $itemDePauta;
 
-    @OneToOne(cascade = CascadeType.REFRESH)
-    @JsonIgnore
-    private ItemDePauta itemDePauta;
-
+///////////////////////
+/*
     @OneToOne(cascade = CascadeType.ALL)
     private ResultadoDaVotacao resultado;
 
@@ -147,5 +147,5 @@ public class Votacao implements Serializable {
 
         return Objects.hash(getId(), isVotacaoAberta(), getUrna(), getItemDePauta(), getResultado(), getStatus());
     }
-
+*/
 }

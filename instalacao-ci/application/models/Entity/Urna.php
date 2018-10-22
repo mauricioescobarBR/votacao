@@ -1,16 +1,28 @@
-package br.edu.unipampa.app.domain;
+<?php
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+namespace Entity;
 
-@Entity(name = "urnas")
-public class Urna {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+/**
+ * Urna Model
+ *
+ * @Entity
+ * @Table(name="urnas")
+ */
+
+
+class Urna
+{
+
+
+    /**
+     * @Id
+     * @Column(type="integer", nullable=false)
+     * @GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+/*
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     private List<Voto> votosParaContagem = new ArrayList<>();
@@ -53,5 +65,5 @@ public class Urna {
 
         return Objects.hash(getId(), getVotosParaContagem());
     }
-
+*/
 }
