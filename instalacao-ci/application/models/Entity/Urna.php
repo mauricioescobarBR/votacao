@@ -1,19 +1,15 @@
 <?php
 
 namespace Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 
 
 /**
- * Urna Model
- *
  * @Entity
  * @Table(name="urnas")
  */
-
-
 class Urna
 {
-
 
     /**
      * @Id
@@ -22,48 +18,61 @@ class Urna
      */
     private $id;
 
-/*
+    /**
+     * @ManyToMany(targetEntity="Voto", orphanRemoval=true)
+     * @JoinTable(name="urnas_votos",
+     *      joinColumns={@JoinColumn(name="urna_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@JoinColumn(name="votos_id", referencedColumnName="id", unique=true)}
+     *      )
+     */
+    private $votosParaContagem;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    private List<Voto> votosParaContagem = new ArrayList<>();
-
-    public void recebe(Voto voto) {
-        if (this.votosParaContagem == null) {
-            this.votosParaContagem = new ArrayList<>();
-        }
-
-        this.votosParaContagem.add(voto);
+    /**
+     * Urna constructor.
+     */
+    public function __construct()
+    {
+        $this->votosParaContagem = new ArrayCollection();
     }
 
-    public Long getId() {
-        return id;
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
-    public List<Voto> getVotosParaContagem() {
-        return votosParaContagem;
+    /**
+     * @return mixed
+     */
+    public function getVotosParaContagem()
+    {
+        return $this->votosParaContagem;
     }
 
-    public void setVotosParaContagem(List<Voto> votosParaContagem) {
-        this.votosParaContagem = votosParaContagem;
+    /**
+     * @param mixed $votosParaContagem
+     */
+    public function setVotosParaContagem($votosParaContagem)
+    {
+        $this->votosParaContagem = $votosParaContagem;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Urna urna = (Urna) o;
-        return Objects.equals(getId(), urna.getId()) &&
-                Objects.equals(getVotosParaContagem(), urna.getVotosParaContagem());
-    }
+//    public void recebe(Voto voto) {
+//        if (this.votosParaContagem == null) {
+//            this.votosParaContagem = new ArrayList<>();
+//        }
+//
+//        this.votosParaContagem.add(voto);
+//    }
 
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(getId(), getVotosParaContagem());
-    }
-*/
 }
