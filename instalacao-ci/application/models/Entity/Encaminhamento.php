@@ -20,17 +20,17 @@ class Encaminhamento
     /**
      * @Column(type="string", nullable=false)
      */
-	private $descricao;
+    private $descricao;
 
     /**
      * @Column(type="integer", nullable=false)
      */
-	private $somaVoto = 0;
+    private $somaVoto = 0;
 
-	/**
+    /**
      * @ManyToOne(targetEntity="ItemDePauta", inversedBy="encaminhamentos")
      */
-	private $itemDePauta;
+    private $itemDePauta;
 
     /**
      * @return mixed

@@ -1,6 +1,7 @@
 <?php
 
 namespace Entity;
+
 use Doctrine\Common\Collections\ArrayCollection;
 
 
@@ -20,12 +21,12 @@ class ItemDePauta
 
 
     /**
-     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
      */
     private $primeiroTurno;
 
     /**
-     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
      */
     private $segundoTurno;
 

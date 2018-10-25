@@ -20,22 +20,22 @@ class Votacao
     /**
      * @Column(type="boolean", nullable="false")
      */
-    private $votacaoAberta = false;   
+    private $votacaoAberta = false;
 
-     /**
-     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"all"}, orphanRemoval=true)
+    /**
+     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
      * @JoinColumn(name="urna_id", referencedColumnName="id")
      */
     private $urna;
 
     /**
-     * @OneToOne(targetEntity="ItemDePauta", cascade={"refresh"})
+     * @OneToOne(targetEntity="ItemDePauta", cascade={"persist", "merge"})
      * @JoinColumn(name="itemdepauta_id", referencedColumnName="id")
-    */
+     */
     private $itemDePauta;
 
     /**
-     * @OneToOne(targetEntity="ResultadoDaVotacao", cascade={"persist", "remove"})
+     * @OneToOne(targetEntity="ResultadoDaVotacao", cascade={"persist", "remove", "merge"})
      */
     private $resultado;
 

@@ -2,12 +2,15 @@
 
 namespace Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * @Entity
- * @Table(name="votacoes")
+ * @Table(name="reunioes")
  */
-class Reuniao {
+class Reuniao
+{
 
     /**
      * @Id
@@ -48,7 +51,7 @@ class Reuniao {
     private $membros;
 
     /**
-     * @OneToOne(targetEntity="Moderador", cascade={"persist", "remove"})
+     * @OneToOne(targetEntity="Moderador", cascade={"persist", "remove", "merge"})
      */
     private $moderador;
 
@@ -57,114 +60,161 @@ class Reuniao {
      */
     private $itensDePauta;
 
-    
+    /**
+     * Reuniao constructor.
+     */
+    public function __construct()
+    {
+        $this->membros = new ArrayCollection();
+        $this->itensDePauta = new ArrayCollection();
+    }
 
-//    public Long getId() {
-//        return id;
-//    }
-//
-//    public List<Membro> getMembros() {
-//        return membros;
-//    }
-//
-//    public void setMembros(List<Membro> membros) {
-//        this.membros = membros;
-//    }
-//
-//    public Moderador getModerador() {
-//        return moderador;
-//    }
-//
-//    public void setModerador(Moderador moderador) {
-//        if (moderador == null) {
-//            throw new IllegalArgumentException();
-//        } else {
-//            this.moderador = moderador;
-//        }
-//    }
-//
-//    public List<ItemDePauta> getItensDePauta() {
-//        return itensDePauta;
-//    }
-//
-//    public void setItensDePauta(List<ItemDePauta> itensDePauta) {
-//        this.itensDePauta = itensDePauta;
-//    }
-//
-//    public String getDescricao() {
-//        return descricao;
-//    }
-//
-//    public void setDescricao(String descricao) {
-//        if (descricao == null || descricao == "") {
-//            throw new IllegalArgumentException();
-//        } else {
-//            this.descricao = descricao;
-//        }
-//    }
-//
-//    public LocalDate getData() {
-//        return data;
-//    }
-//
-//    public void setData(LocalDate data) {
-//        if (data == null) {
-//            throw new IllegalArgumentException();
-//        } else {
-//            this.data = data;
-//        }
-//    }
-//
-//    public LocalTime getHorario() {
-//        return horario;
-//    }
-//
-//    public void setHorario(LocalTime horario) {
-//        if (horario == null) {
-//            throw new IllegalArgumentException();
-//        } else {
-//            this.horario = horario;
-//        }
-//    }
-//
-//    public void setReuniaoOrdinaria(TipoDaReuniao tipoDaReuniao) {
-//        this.tipoDaReuniao = TipoDaReuniao.ORDINARIA;
-//    }
-//
-//    public void setReuniaoExtraordinaria(TipoDaReuniao tipoDaReuniao) {
-//        this.tipoDaReuniao = TipoDaReuniao.EXTRAORDINARIA;
-//    }
-//
-//    public Boolean getEstaAberta() {
-//        return estaAberta;
-//    }
-//
-//    public void setEstaAberta(Boolean estaAberta) {
-//        this.estaAberta = estaAberta;
-//    }
-//
-//    public void setId(Long id) {
-//        this.id = id;
-//    }
-//
-//    public TipoDaReuniao getTipoDaReuniao() {
-//        return tipoDaReuniao;
-//    }
-//
-//    public void setTipoDaReuniao(TipoDaReuniao tipoDaReuniao) {
-//        this.tipoDaReuniao = tipoDaReuniao;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Reuniao{" +
-//                "id=" + id +
-//                ", descricao='" + descricao + '\'' +
-//                ", data=" + data +
-//                ", horario=" + horario +
-//                ", estaAberta=" + estaAberta +
-//                ", moderador=" + moderador +
-//                '}';
-//    }
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescricao()
+    {
+        return $this->descricao;
+    }
+
+    /**
+     * @param mixed $descricao
+     */
+    public function setDescricao($descricao)
+    {
+        $this->descricao = $descricao;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     * @param mixed $data
+     */
+    public function setData($data)
+    {
+        $this->data = $data;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHorario()
+    {
+        return $this->horario;
+    }
+
+    /**
+     * @param mixed $horario
+     */
+    public function setHorario($horario)
+    {
+        $this->horario = $horario;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEstaAberta()
+    {
+        return $this->estaAberta;
+    }
+
+    /**
+     * @param mixed $estaAberta
+     */
+    public function setEstaAberta($estaAberta)
+    {
+        $this->estaAberta = $estaAberta;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTipoDaReuniao()
+    {
+        return $this->tipoDaReuniao;
+    }
+
+    /**
+     * @param mixed $tipoDaReuniao
+     */
+    public function setTipoDaReuniao($tipoDaReuniao)
+    {
+        if (!in_array($tipoDaReuniao, TipoDaReuniao::getAvailableTypes())) {
+            throw new \InvalidArgumentException("Invalid type");
+        }
+
+        $this->tipoDaReuniao = $tipoDaReuniao;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMembros()
+    {
+        return $this->membros;
+    }
+
+    /**
+     * @param mixed $membros
+     */
+    public function setMembros($membros)
+    {
+        $this->membros = $membros;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getModerador()
+    {
+        return $this->moderador;
+    }
+
+    /**
+     * @param mixed $moderador
+     */
+    public function setModerador($moderador)
+    {
+        $this->moderador = $moderador;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItensDePauta()
+    {
+        return $this->itensDePauta;
+    }
+
+    /**
+     * @param mixed $itensDePauta
+     */
+    public function setItensDePauta($itensDePauta)
+    {
+        $this->itensDePauta = $itensDePauta;
+    }
 
 }
