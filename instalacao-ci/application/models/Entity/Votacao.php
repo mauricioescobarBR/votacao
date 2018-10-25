@@ -18,7 +18,7 @@ class Votacao
     private $id;
 
     /**
-     * @Column(type="boolean", nullable="false")
+     * @Column(type="boolean", nullable=false)
      */
     private $votacaoAberta = false;
 
