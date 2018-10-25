@@ -1,0 +1,40 @@
+main{    
+    margin-top: 5em;
+    background-color: #F0F4ED;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+#tituloItem{
+    padding-top: 2em;
+}
+
+#reuniao{
+    padding: 20px;
+    font-size: 17px;
+}
+
+#opcaoItem{
+     padding: 30px;
+}
+
+#item-padrao{
+    padding: 30px;
+}
+
+#item-customizado{
+     padding: 30px;
+}
+#btn-enviarItem{
+     padding: 30px;
+}
+.btn-salvarItemCustomizado{
+   padding: 30px; 
+}
+#btn-salvar{
+    margin-left: 20px;
+}
+
+#radiocustomizado{
+    padding-top: 10px;
+}
