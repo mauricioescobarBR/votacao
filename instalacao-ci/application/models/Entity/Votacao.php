@@ -29,13 +29,13 @@ class Votacao
     private $urna;
 
     /**
-     * @OneToOne(targetEntity="ItemDePauta", cascade={"persist", "merge"})
+     * @OneToOne(targetEntity="ItemDePauta")
      * @JoinColumn(name="itemdepauta_id", referencedColumnName="id")
      */
     private $itemDePauta;
 
     /**
-     * @OneToOne(targetEntity="ResultadoDaVotacao", cascade={"persist", "remove", "merge"})
+     * @OneToOne(targetEntity="ResultadoDaVotacao", cascade={"persist", "remove", "merge", "refresh"})
      */
     private $resultado;
 

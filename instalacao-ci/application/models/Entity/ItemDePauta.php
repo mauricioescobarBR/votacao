@@ -21,12 +21,12 @@ class ItemDePauta
 
 
     /**
-     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
+ * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
      */
     private $primeiroTurno;
 
     /**
-     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
      */
     private $segundoTurno;
 

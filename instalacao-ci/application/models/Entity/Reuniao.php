@@ -51,7 +51,7 @@ class Reuniao
     private $membros;
 
     /**
-     * @OneToOne(targetEntity="Moderador", cascade={"persist", "remove", "merge"})
+     * @OneToOne(targetEntity="Moderador")
      */
     private $moderador;
 

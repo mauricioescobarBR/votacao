@@ -20,7 +20,7 @@ class ResultadoDaVotacao
     private $id;
 
     /**
-     * @ManyToMany(targetEntity="ResultadosDoEncaminhamento", orphanRemoval=true, cascade={"persist", "remove", "merge"})
+     * @ManyToMany(targetEntity="ResultadosDoEncaminhamento", orphanRemoval=true, cascade={"persist", "remove", "merge", "refresh"})
      * @JoinTable(name="resultados_resultados_do_encaminhamento",
      *      joinColumns={@JoinColumn(name="resultados_id", referencedColumnName="id")},
      *      inverseJoinColumns={@JoinColumn(name="resultados_do_encaminhamento_id", referencedColumnName="id", unique=true)}
