@@ -14,11 +14,84 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 
+    <!--CSS-->
+    <style type="text/css">
+
+        /*CSS dos botões*/
+        input[type=checkbox] {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+
+        label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 50px;
+            height: 26px;
+            background: grey;
+            display: block;
+            border-radius: 100px;
+            position: relative;
+        }
+
+        label:after {
+            content: '';
+            position: absolute;
+            top: 2.5px;
+            left: 3px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+        }
+
+        input:checked + label {
+            background: #009045;
+        }
+
+        input:checked + label:after {
+            left: calc(100% - 5px);
+            transform: translatex(-100%);
+        }
+
+        label:hover:after {
+            /*width: 50px;*/
+        }
+
+        /*CSS do navBar*/
+        .navBarG {
+            background-color: #009045;
+        }
+
+        /*CSS do container*/
+        #contents {
+            float: center;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            -webkit-box-shadow: #ccc 0 0 15px;
+        }
+
+        /*CSS do body*/
+        body {
+            background: #f4f4f4;
+        }
+
+        /*CSS do titulo*/
+        #titulo {
+            color: #666;
+        }
+
+    </style>
+
     <title>Reuniões</title>
 </head>
 <body class="bg-light">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-success">
+<!--Navbar -->
+<nav class="navBarG navbar navbar-expand-lg navbar-dark bg-gradient ">
 
     <div class="container">
 
@@ -45,25 +118,6 @@
 
             </ul>
 
-            <!--<ul class="navbar-nav ml-auto">-->
-
-            <!--<li class="nav-item dropdown">-->
-
-            <!--<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">-->
-            <!--Social-->
-            <!--</a>-->
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Facebook</a>-->
-            <!--<a class="dropdown-item" href="#">Twitter</a>-->
-            <!--<a class="dropdown-item" href="#">Instagram</a>-->
-
-            <!--</div>-->
-
-
-            <!--</li>-->
-
-            <!--</ul>-->
-
             <form class="form-inline">
                 <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
                 <button class="btn btn-secondary" type="Submit">Ok</button>
@@ -82,28 +136,29 @@
     </div>
 </div>
 
-<div class="container bg-white">
+<!--Lista de reuniões-->
+<div class="container bg-white" id="contents">
 
-        <p class="text-center font-weight-bold text-secondary">Reuniões</p>
+    <p id="titulo" class="text-center font-weight-bold text-secondary">Reuniões</p>
 
 
-        <ul class="list-group">
-            <li class="list-group-item">Cras justo odio
-                <input type="checkbox" id="switch1"/><label for="switch1"></label>
-            </li>
-            <li class="list-group-item">Dapibus ac facilisis in
-                <input type="checkbox" id="switch2"/><label for="switch2"></label>
-            </li>
-            <li class="list-group-item">Morbi leo risus
-                <input type="checkbox" id="switch3"/><label for="switch3"></label>
-            </li>
-            <li class="list-group-item">Porta ac consectetur ac
-                <input type="checkbox" id="switch4"/><label for="switch4"></label>
-            </li>
-            <li class="list-group-item">Vestibulum at eros
-                <input type="checkbox" id="switch5"/><label for="switch5"></label>
-            </li>
-        </ul>
+    <ul class="list-group">
+        <li class="list-group-item">Cras justo odio
+            <input type="checkbox" id="switch1"/><label for="switch1"></label>
+        </li>
+        <li class="list-group-item">Dapibus ac facilisis in
+            <input type="checkbox" id="switch2"/><label for="switch2"></label>
+        </li>
+        <li class="list-group-item">Morbi leo risus
+            <input type="checkbox" id="switch3"/><label for="switch3"></label>
+        </li>
+        <li class="list-group-item">Porta ac consectetur ac
+            <input type="checkbox" id="switch4"/><label for="switch4"></label>
+        </li>
+        <li class="list-group-item">Vestibulum at eros
+            <input type="checkbox" id="switch5"/><label for="switch5"></label>
+        </li>
+    </ul>
 </div>
 
 <div class="row">
@@ -111,6 +166,8 @@
         <hr>
     </div>
 </div>
+
+<!--Rodapé-->
 <div id="footer" class="container text-center">
     <a href="javascript:abrirDialog('ptl/sistema/centralDeAjuda',
                                         'dialog_modal_padrao', '500', '540',
@@ -132,13 +189,6 @@
     </p>
 
 </div>
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </body>
 </html>
