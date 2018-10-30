@@ -56,4 +56,12 @@ class Moderador
         $this->nome = $nome;
     }
 
+    /**
+     * @param Reuniao $reuniao
+     */
+    public function abrirReuniao(Reuniao $reuniao)
+    {
+        $reuniao->setEstaAberta(true);
+    }
+
 }
