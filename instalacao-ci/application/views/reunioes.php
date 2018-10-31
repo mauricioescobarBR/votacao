@@ -1,102 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"/>
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="C:/xampp/htdocs/votacao/instalacao-ci/application/views/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
 
-    <!--CSS-->
-    <style type="text/css">
-
-        /*CSS dos botões*/
-        input[type=checkbox] {
-            height: 0;
-            width: 0;
-            visibility: hidden;
-        }
-
-        label {
-            cursor: pointer;
-            text-indent: -9999px;
-            width: 50px;
-            height: 26px;
-            background: grey;
-            display: block;
-            border-radius: 100px;
-            position: relative;
-        }
-
-        label:after {
-            content: '';
-            position: absolute;
-            top: 2.5px;
-            left: 3px;
-            width: 20px;
-            height: 20px;
-            background: #fff;
-            border-radius: 90px;
-            transition: 0.3s;
-        }
-
-        input:checked + label {
-            background: #009045;
-        }
-
-        input:checked + label:after {
-            left: calc(100% - 5px);
-            transform: translatex(-100%);
-        }
-
-        label:hover:after {
-            /*width: 50px;*/
-        }
-
-        /*CSS do navBar*/
-        .navBarG {
-            background-color: #009045;
-        }
-
-        /*CSS do container*/
-        #contents {
-            float: center;
-            padding: 20px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            -webkit-box-shadow: #ccc 0 0 15px;
-        }
-
-        /*CSS do body*/
-        body {
-            background: #f4f4f4;
-        }
-
-        /*CSS do titulo*/
-        #titulo {
-            color: #666;
-        }
-
-    </style>
+    <!-- Custom CSS -->
+    <?php echo assets_css('styles.css') ?>
 
     <title>Reuniões</title>
 </head>
 <body class="bg-light">
 
+<nav class="navbar-grey navbar navbar-expand-lg navbar-dark">
+
+    <div class="row margin-left">
+        <a class="navbar-brand h1 mb-0 logo" href="#">
+            <?php echo assets_img('logo.png') ?>
+        </a>
+</nav>
+
 <!--Navbar -->
-<nav class="navBarG navbar navbar-expand-lg navbar-dark bg-gradient ">
+<nav class="navbar-green navbar navbar-expand-lg navbar-dark">
 
-    <div class="container">
-
-
-        <a class="navbar-brand h1 mb-0" href="#">GURI</a>
+    <div class="row margin-left">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
             <span class="navbar-toggler-icon"></span>
@@ -118,11 +54,6 @@
 
             </ul>
 
-            <form class="form-inline">
-                <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
-                <button class="btn btn-secondary" type="Submit">Ok</button>
-            </form>
-
         </div>
 
     </div>
@@ -139,29 +70,34 @@
 <!--Lista de reuniões-->
 <div class="container bg-white" id="contents">
 
-    <p id="titulo" class="text-center font-weight-bold text-secondary">Reuniões</p>
+    <div class="bottom-30">
+        <h2 id="titulo" class="text-center font-weight-bold text-secondary app-h2">Reuniões</h2>
+        <p id="descricao" class="text-center font-weight-bold text-secondary app-h2-description">
+            Clique no botão para abrir uma reunião para os membros poderem se registrar.</p>
+    </div>
 
-    <?php foreach ($reunioes as $reuniao) {
-        echo $reuniao->getId();
-    } ?>
+    <!--    --><?php //foreach ($reunioes as $reuniao) {
+    //        echo $reuniao->getId();
+    //    } ?>
 
-    <ul class="list-group">
-        <li class="list-group-item">Cras justo odio
+    <div class="list-group app-list">
+        <a href="#" class="list-group-item list-group-item-action active">
+            <span>Cras justo odio</span>
             <input type="checkbox" id="switch1"/><label for="switch1"></label>
-        </li>
-        <li class="list-group-item">Dapibus ac facilisis in
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <span>Dapibus ac facilisis in</span>
             <input type="checkbox" id="switch2"/><label for="switch2"></label>
-        </li>
-        <li class="list-group-item">Morbi leo risus
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <span>Dapibus ac facilisis in</span>
             <input type="checkbox" id="switch3"/><label for="switch3"></label>
-        </li>
-        <li class="list-group-item">Porta ac consectetur ac
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <span>Dapibus ac facilisis in</span>
             <input type="checkbox" id="switch4"/><label for="switch4"></label>
-        </li>
-        <li class="list-group-item">Vestibulum at eros
-            <input type="checkbox" id="switch5"/><label for="switch5"></label>
-        </li>
-    </ul>
+        </a>
+    </div>
 </div>
 
 <div class="row">
@@ -193,5 +129,16 @@
 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<?php echo assets_js('main.js') ?>
 </body>
 </html>
