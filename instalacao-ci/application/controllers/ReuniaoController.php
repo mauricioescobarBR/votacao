@@ -15,7 +15,7 @@ class ReuniaoController extends CI_Controller
         $repository = $credo->get_repository('Entity\Reuniao');
         $data['reunioes'] = $repository->find_all();
 
-        $this->load->view("US04", $data);
+        $this->load->view("reunioes", $data);
     }
 
 }
