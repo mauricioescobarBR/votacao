@@ -5,9 +5,9 @@ namespace Entity;
 
 abstract class StatusVotacao
 {
-    const FECHADA = "fechada";
-    const ABERTA = "aberta";
-    const FINALIZADA = "finalizada";
+    const FECHADA = "FECHADA";
+    const ABERTA = "ABERTA";
+    const FINALIZADA = "FINALIZADA";
 
     protected static $typeName = [
         self::FECHADA => 'Fechada',

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
+class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -18,7 +18,13 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+        ),
+        'R' => 
+        array (
+            'Rougin\\SparkPlug\\' => 17,
+            'Rougin\\Credo\\' => 13,
         ),
         'P' => 
         array (
@@ -31,7 +37,9 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
             'DebugBar\\' => 9,
         ),
     );
@@ -49,9 +57,21 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Rougin\\SparkPlug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rougin/spark-plug/src',
+        ),
+        'Rougin\\Credo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rougin/credo/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -65,9 +85,17 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'DebugBar\\' => 
         array (
@@ -90,17 +118,9 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
             array (
                 0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
             ),
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
-            ),
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
-            ),
-            'Doctrine\\Common\\Annotations\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
             ),
             'Doctrine\\Common\\' => 
             array (
@@ -112,9 +132,9 @@ class ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit2072335351c15b5bc4d7d24f75eb18ef::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

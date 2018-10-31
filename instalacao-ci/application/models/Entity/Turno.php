@@ -5,8 +5,8 @@ namespace Entity;
 
 abstract class Turno
 {
-    const PRIMEIRO = "primeiro";
-    const SEGUNDO = "segundo";
+    const PRIMEIRO = "PRIMEIRO";
+    const SEGUNDO = "SEGUNDO";
 
     protected static $typeName = [
         self::PRIMEIRO => 'Primeiro',

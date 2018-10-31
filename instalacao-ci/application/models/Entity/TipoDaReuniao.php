@@ -5,8 +5,8 @@ namespace Entity;
 
 abstract class TipoDaReuniao
 {
-    const ORDINARIA = "ordinaria";
-    const EXTRAORDINARIA = "extraordinaria";
+    const ORDINARIA = "ORDINÁRIA";
+    const EXTRAORDINARIA = "EXTRAORDINÁRIA";
 
     protected static $typeName = [
         self::ORDINARIA => 'Ordinária',

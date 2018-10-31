@@ -2,7 +2,8 @@
 
 namespace Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
+
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 /**

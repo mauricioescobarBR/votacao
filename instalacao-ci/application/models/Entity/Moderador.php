@@ -2,6 +2,7 @@
 
 namespace Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
 
 
@@ -23,6 +24,19 @@ class Moderador
      * @Column(type="string", nullable=false)
      */
     private $nome;
+
+    /**
+     * @OneToMany(targetEntity="Entity\Reuniao", mappedBy="moderador")
+     */
+    private $reunioes;
+
+    /**
+     * Moderador constructor.
+     */
+    public function __construct()
+    {
+        $this->reunioes = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -54,6 +68,22 @@ class Moderador
     public function setNome($nome)
     {
         $this->nome = $nome;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getReunioes()
+    {
+        return $this->reunioes;
+    }
+
+    /**
+     * @param mixed $reunioes
+     */
+    public function setReunioes($reunioes)
+    {
+        $this->reunioes = $reunioes;
     }
 
     /**

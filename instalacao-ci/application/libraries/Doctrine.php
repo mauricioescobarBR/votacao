@@ -42,11 +42,12 @@ class Doctrine
 		$metadata_paths = array(APPPATH . 'models/Entity');
 
 		// Set $dev_mode to TRUE to disable caching while you develop
-		$dev_mode = false;
+		$dev_mode = true;
 
 		// If you want to use a different metadata driver, change createAnnotationMetadataConfiguration
 		// to createXMLMetadataConfiguration or createYAMLMetadataConfiguration.
-		$config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode, $proxies_dir);
+//		$config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode, $proxies_dir);
+        $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode, $proxies_dir,null,false);
 		$this->em = EntityManager::create($connection_options, $config);
 
 		$loader = new ClassLoader($models_namespace, $models_path);
