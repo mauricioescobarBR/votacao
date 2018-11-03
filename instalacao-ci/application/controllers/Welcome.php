@@ -3,7 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	/**
+
+    public function __construct() {
+        parent:: __construct();
+        //$this->load->helper(array('form', 'utility', 'secao', 'mensagens'));
+        $this->load->library(array('session', 'form_validation', 'doctrine'));
+        //$this->load->model(array('m_admin', 'm_token', 'm_site'));
+    }
+
+    /**
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
@@ -20,8 +28,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->library('doctrine');
-
 		$group = new Entity\UserGroup;
 		$group->setName('Users');
 
@@ -42,4 +48,10 @@ class Welcome extends CI_Controller {
 			'group' => $group,
 		));
 	}
+	public function itens_de_pauta(){
+        $group = new Entity\ItemDePauta;
+        $this->load->('');
+
+	}
+
 }
