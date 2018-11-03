@@ -27,6 +27,7 @@
 body {
     background-color: #e7e9ee !important;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 .app-h2 {
@@ -44,6 +45,10 @@ body {
 
 .bottom-30 {
     margin-bottom: 30px !important;
+}
+
+.no-margin {
+    margin: 0!important;
 }
 
 /*CSS do container*/

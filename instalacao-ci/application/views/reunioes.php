@@ -30,7 +30,7 @@
 </nav>
 
 <!--Navbar -->
-<nav class="navbar-green navbar navbar-expand-lg navbar-dark">
+<nav class="navbar-green navbar navbar-expand-lg navbar-dark bottom-30">
 
     <div class="row margin-left">
 
@@ -60,13 +60,6 @@
 
 </nav>
 
-
-<div class="row">
-    <div>
-        <hr>
-    </div>
-</div>
-
 <!--Lista de reuniões-->
 <div class="container bg-white" id="contents">
 
@@ -80,22 +73,30 @@
     //        echo $reuniao->getId();
     //    } ?>
 
-    <div class="list-group app-list">
-        <a href="#" class="list-group-item list-group-item-action active">
-            <span>Cras justo odio</span>
-            <input type="checkbox" id="switch1"/><label for="switch1"></label>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action d-flex
+            justify-content-between align-items-center">
             <span>Dapibus ac facilisis in</span>
-            <input type="checkbox" id="switch2"/><label for="switch2"></label>
+            <!--<input type="checkbox" id="switch4"/><label class="no-margin" for="switch4"></label>-->
+            <button type="button" class="btn btn-outline-success">Success</button>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+
+        <a href="#" class="list-group-item list-group-item-action d-flex
+            justify-content-between align-items-center">
             <span>Dapibus ac facilisis in</span>
-            <input type="checkbox" id="switch3"/><label for="switch3"></label>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+
+        <a href="#" class="list-group-item list-group-item-action d-flex
+            justify-content-between align-items-center">
             <span>Dapibus ac facilisis in</span>
-            <input type="checkbox" id="switch4"/><label for="switch4"></label>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action d-flex
+            justify-content-between align-items-center">
+            <span>Dapibus ac facilisis in</span>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
         </a>
     </div>
 </div>
