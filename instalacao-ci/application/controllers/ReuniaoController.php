@@ -7,7 +7,7 @@ class ReuniaoController extends CI_Controller
 
     public function index()
     {
-        $this->load->model('Entity\Reuniao');
+        //$this->load->model('Entity/Reuniao');
         $this->load->repository('Reunioes');
         $this->load->database();
 

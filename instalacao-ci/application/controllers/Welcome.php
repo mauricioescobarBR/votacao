@@ -28,10 +28,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$group = new Entity\UserGroup;
-		$group->setName('Users');
+//		$group = new Entity\UserGroup;
+		//$group->setName('Users');
 
-		$user = new Entity\User;
+		/*$user = new Entity\User;
 		$user->setUsername('wildlyinaccurate');
 		$user->setPassword('Passw0rd');
 		$user->setEmail('wildlyinaccurate@gmail.com');
@@ -47,10 +47,12 @@ class Welcome extends CI_Controller {
 			'user' => $user,
 			'group' => $group,
 		));
+		*/
+
 	}
 	public function itens_de_pauta(){
         $group = new Entity\ItemDePauta;
-        $this->load->('');
+        //$this->load->('');
 
 	}
 
