@@ -1,3 +1,2 @@
 .idea/
-.gitignore.swp
-instalacao-ci/.idea/
+*.swp
