@@ -18,14 +18,16 @@
  *      -> $route['blog/(:any)'] = 'blog/post/$1'
  */
 
-Route::get('/', function(){
-   luthier_info();
-})->name('homepage');
+//Route::get('/', function(){
+//   luthier_info();
+//})->name('homepage');
 
-Route::set('404_override', function(){
+Route::get('/', 'Welcome@index')->name('homepage');
+
+Route::set('404_override', function () {
     show_404();
 });
 
-Route::set('translate_uri_dashes',FALSE);
+Route::set('translate_uri_dashes', FALSE);
 
 Route::get('reunioes', 'ReuniaoController@index');
