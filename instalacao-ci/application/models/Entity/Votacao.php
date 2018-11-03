@@ -4,13 +4,9 @@ namespace Entity;
 
 
 /**
- * Votacao Model
- *
  * @Entity
  * @Table(name="votacoes")
  */
-
-
 class Votacao
 {
 
@@ -21,131 +17,171 @@ class Votacao
      */
     private $id;
 
-    private $votacaoAberta = false;   
+    /**
+     * @Column(type="boolean", nullable=false)
+     */
+    private $votacaoAberta = false;
 
-     /**
-     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"all"}, orphanRemoval=true)
+    /**
+     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
      * @JoinColumn(name="urna_id", referencedColumnName="id")
      */
     private $urna;
 
-
-
-/**
-     * @OneToOne(targetEntity="ItemDePauta", cascade={"refresh"})
+    /**
+     * @OneToOne(targetEntity="ItemDePauta")
      * @JoinColumn(name="itemdepauta_id", referencedColumnName="id")
-*/
+     */
     private $itemDePauta;
 
-///////////////////////
-/*
-    @OneToOne(cascade = CascadeType.ALL)
-    private ResultadoDaVotacao resultado;
+    /**
+     * @OneToOne(targetEntity="ResultadoDaVotacao", cascade={"persist", "remove", "merge", "refresh"})
+     */
+    private $resultado;
 
-    @Enumerated
-    private StatusVotacao status = StatusVotacao.FECHADA;
+    /**
+     * @Column(type="string", nullable=false)
+     */
+    private $status = StatusVotacao::FECHADA;
 
-    @Enumerated
-    private Turno turno;
+    /**
+     * @Column(type="string", nullable=false)
+     */
+    private $turno;
 
-    public Votacao() {
-
+    /**
+     * Votacao constructor.
+     * @param $urna
+     * @param $itemDePauta
+     */
+    public function __construct(Urna $urna, ItemDePauta $itemDePauta)
+    {
+        $this->urna = $urna;
+        $this->itemDePauta = $itemDePauta;
     }
 
-    public Votacao(Urna urna, ItemDePauta itemDePauta) {
-        this.setUrna(urna);
-        this.setItemDePauta(itemDePauta);
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public void registraVotoNaUrna(Voto voto) {
-        this.getUrna().recebe(voto);
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
-    public Long getId() {
-        return id;
+    /**
+     * @return mixed
+     */
+    public function getVotacaoAberta()
+    {
+        return $this->votacaoAberta;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    /**
+     * @param mixed $votacaoAberta
+     */
+    public function setVotacaoAberta($votacaoAberta)
+    {
+        $this->votacaoAberta = $votacaoAberta;
     }
 
-    public boolean isVotacaoAberta() {
-        return votacaoAberta;
+    /**
+     * @return mixed
+     */
+    public function getUrna()
+    {
+        return $this->urna;
     }
 
-    public void setVotacaoAberta(boolean votacaoAberta) {
-        this.votacaoAberta = votacaoAberta;
+    /**
+     * @param mixed $urna
+     */
+    public function setUrna($urna)
+    {
+        $this->urna = $urna;
     }
 
-    public Urna getUrna() {
-        return urna;
+    /**
+     * @return mixed
+     */
+    public function getItemDePauta()
+    {
+        return $this->itemDePauta;
     }
 
-    public void setUrna(Urna urna) {
-        this.urna = urna;
+    /**
+     * @param mixed $itemDePauta
+     */
+    public function setItemDePauta($itemDePauta)
+    {
+        $this->itemDePauta = $itemDePauta;
     }
 
-    public ItemDePauta getItemDePauta() {
-        return itemDePauta;
+    /**
+     * @return mixed
+     */
+    public function getResultado()
+    {
+        return $this->resultado;
     }
 
-    public void setItemDePauta(ItemDePauta itemDePauta) {
-        this.itemDePauta = itemDePauta;
+    /**
+     * @param mixed $resultado
+     */
+    public function setResultado($resultado)
+    {
+        $this->resultado = $resultado;
     }
 
-    public ResultadoDaVotacao getResultado() {
-        return resultado;
+    /**
+     * @return mixed
+     */
+    public function getStatus()
+    {
+        return $this->status;
     }
 
-    public void setResultado(ResultadoDaVotacao resultado) {
-        this.resultado = resultado;
+    /**
+     * @param mixed $status
+     */
+    public function setStatus($status)
+    {
+        if (!in_array($status, StatusVotacao::getAvailableTypes())) {
+            throw new \InvalidArgumentException("Invalid type");
+        }
+
+        $this->status = $status;
     }
 
-    public StatusVotacao getStatus() {
-        return status;
+    /**
+     * @return mixed
+     */
+    public function getTurno()
+    {
+        return $this->turno;
     }
 
-    public void setStatus(StatusVotacao status) {
-        this.status = status;
+    /**
+     * @param mixed $turno
+     */
+    public function setTurno($turno)
+    {
+        if (!in_array($turno, Turno::getAvailableTypes())) {
+            throw new \InvalidArgumentException("Invalid type");
+        }
+
+        $this->turno = $turno;
     }
 
-    public Turno getTurno() {
-        return turno;
-    }
+//    public void registraVotoNaUrna(Voto voto) {
+//        this.getUrna().recebe(voto);
+//    }
 
-    public void setTurno(Turno turno) {
-        this.turno = turno;
-    }
-
-    @Override
-    public String toString() {
-        return "Votacao{" +
-                "id=" + id +
-                ", votacaoAberta=" + votacaoAberta +
-                ", urna=" + urna +
-                ", itemDePauta=" + itemDePauta +
-                ", resultado=" + resultado +
-                ", status=" + status +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Votacao votacao = (Votacao) o;
-        return isVotacaoAberta() == votacao.isVotacaoAberta() &&
-                Objects.equals(getId(), votacao.getId()) &&
-                Objects.equals(getUrna(), votacao.getUrna()) &&
-                Objects.equals(getItemDePauta(), votacao.getItemDePauta()) &&
-                Objects.equals(getResultado(), votacao.getResultado()) &&
-                getStatus() == votacao.getStatus();
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(getId(), isVotacaoAberta(), getUrna(), getItemDePauta(), getResultado(), getStatus());
-    }
-*/
 }

@@ -2,15 +2,13 @@
 
 namespace Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
- * ItemDePauta Model
- *
  * @Entity
  * @Table(name="itens_de_pauta")
  */
-
-
 class ItemDePauta
 {
 
@@ -21,188 +19,226 @@ class ItemDePauta
      */
     private $id;
 
-///////////
-/*
-    @JsonIgnore
-    @OneToOne(cascade = CascadeType.PERSIST, orphanRemoval = true)
-    private Votacao primeiroTurno;
 
-    @JsonIgnore
-    @OneToOne(optional = true, cascade = CascadeType.PERSIST, orphanRemoval = true)
-    private Votacao segundoTurno;
+    /**
+ * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
+     */
+    private $primeiroTurno;
 
-    @NotEmpty
-    @Size(min=3)
-    private String relator;
+    /**
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
+     */
+    private $segundoTurno;
 
-    @NotEmpty
-    @Size(min=3)
-    private String descricao;
+    /**
+     * @Column(type="string", nullable=false)
+     */
+    private $relator;
 
-    @NotNull
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Reuniao reuniao;
+    /**
+     * @Column(type="string", nullable=false)
+     */
+    private $descricao;
 
-    @Column(nullable = true)
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Encaminhamento> encaminhamentos;
+    /**
+     * @ManyToOne(targetEntity="Reuniao", inversedBy="itensDePauta")
+     */
+    private $reuniao;
 
-    @NotNull
-    private boolean temSegundoTurno;
-    private Integer ordem;
+    /**
+     * @Column(nullable = true)
+     * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"})
+     */
+    private $encaminhamentos;
 
-    public void adiciona(Encaminhamento encaminhamento) {
-        if (this.encaminhamentos == null) {
-            this.encaminhamentos = new ArrayList<>();
-        }
-        if (encaminhamento == null) {
-            throw new IllegalArgumentException("O encaminhamento não pode ser nulo!");
-        }
+    /**
+     * @Column(type="boolean", nullable=false)
+     */
+    private $temSegundoTurno;
 
-        this.encaminhamentos.add(encaminhamento);
+    /**
+     * @Column(type="integer", nullable=false)
+     */
+    private $ordem;
+
+    /**
+     * ItemDePauta constructor.
+     */
+    public function __construct()
+    {
+        $this->encaminhamentos = new ArrayCollection();
     }
 
-    public void removeEncaminhamento(Encaminhamento encaminhamento) {
-        if (this.encaminhamentos == null) {
-            this.encaminhamentos = new ArrayList<>();
-        }
-
-        if (this.encaminhamentos.size() == 0) {
-            throw new ArrayIndexOutOfBoundsException("A lista de encaminhamentos está vazia!");
-        }
-
-        this.encaminhamentos.remove(encaminhamento);
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public Integer getOrdem() {
-        return ordem;
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
-    public void setOrdem(Integer ordem) {
-        this.ordem = ordem;
+    /**
+     * @return mixed
+     */
+    public function getPrimeiroTurno()
+    {
+        return $this->primeiroTurno;
     }
 
-    public void cancelaVotacao(){
-        this.primeiroTurno = null;
-        this.segundoTurno = null;
+    /**
+     * @param mixed $primeiroTurno
+     */
+    public function setPrimeiroTurno(Votacao $primeiroTurno)
+    {
+        $this->primeiroTurno = $primeiroTurno;
     }
 
-    public Long getId() {
-        return id;
+    /**
+     * @return mixed
+     */
+    public function getSegundoTurno()
+    {
+        return $this->segundoTurno;
     }
 
-    public Votacao getPrimeiroTurno() {
-        return primeiroTurno;
+    /**
+     * @param mixed $segundoTurno
+     */
+    public function setSegundoTurno(Votacao $segundoTurno)
+    {
+        $this->segundoTurno = $segundoTurno;
     }
 
-    public void setPrimeiroTurno(Votacao primeiroTurno) {
-        primeiroTurno.setTurno(Turno.PRIMEIRO);
-        this.primeiroTurno = primeiroTurno;
+    /**
+     * @return mixed
+     */
+    public function getRelator()
+    {
+        return $this->relator;
     }
 
-    public Votacao getSegundoTurno() {
-        return segundoTurno;
+    /**
+     * @param mixed $relator
+     */
+    public function setRelator($relator)
+    {
+        $this->relator = $relator;
     }
 
-    public void setSegundoTurno(Votacao segundoTurno) {
-        if (this.isTemSegundoTurno() == true) {
-            this.segundoTurno = segundoTurno;
-            this.segundoTurno.setTurno(Turno.SEGUNDO);
-        } else {
-            throw new IllegalArgumentException();
-        }
+    /**
+     * @return mixed
+     */
+    public function getDescricao()
+    {
+        return $this->descricao;
     }
 
-    public String getRelator() {
-        return relator;
+    /**
+     * @param mixed $descricao
+     */
+    public function setDescricao($descricao)
+    {
+        $this->descricao = $descricao;
     }
 
-    public void setRelator(String relator) {
-        if (relator == null || relator == "") {
-            throw new IllegalArgumentException();
-        } else {
-            this.relator = relator;
-        }
+    /**
+     * @return mixed
+     */
+    public function getReuniao()
+    {
+        return $this->reuniao;
     }
 
-    public String getDescricao() {
-        return descricao;
+    /**
+     * @param mixed $reuniao
+     */
+    public function setReuniao(Reuniao $reuniao)
+    {
+        $this->reuniao = $reuniao;
     }
 
-    public void setDescricao(String descricao) {
-        if (descricao == null || descricao == "") {
-            throw new IllegalArgumentException();
-        } else {
-            this.descricao = descricao;
-        }
+    /**
+     * @return mixed
+     */
+    public function getEncaminhamentos()
+    {
+        return $this->encaminhamentos;
     }
 
-    public boolean isTemSegundoTurno() {
-        return this.temSegundoTurno;
+    /**
+     * @param mixed $encaminhamentos
+     */
+    public function setEncaminhamentos($encaminhamentos)
+    {
+        $this->encaminhamentos = new ArrayCollection($encaminhamentos);
     }
 
-    public void setTemSegundoTurno(boolean temSegundoTurno) {
-        this.temSegundoTurno = temSegundoTurno;
+    /**
+     * @return mixed
+     */
+    public function getTemSegundoTurno()
+    {
+        return $this->temSegundoTurno;
     }
 
-    public List<Encaminhamento> getEncaminhamentos() {
-        return encaminhamentos;
+    /**
+     * @param mixed $temSegundoTurno
+     */
+    public function setTemSegundoTurno($temSegundoTurno)
+    {
+        $this->temSegundoTurno = $temSegundoTurno;
     }
 
-    public void setEncaminhamentos(List<Encaminhamento> encaminhamentos) {
-        this.encaminhamentos = encaminhamentos;
+    /**
+     * @return mixed
+     */
+    public function getOrdem()
+    {
+        return $this->ordem;
     }
 
-    public Reuniao getReuniao() {
-        return reuniao;
+    /**
+     * @param mixed $ordem
+     */
+    public function setOrdem($ordem)
+    {
+        $this->ordem = $ordem;
     }
 
-    public void setReuniao(Reuniao reuniao) {
-        if (reuniao == null) {
-            throw new IllegalArgumentException();
-        } else {
-            this.reuniao = reuniao;
-        }
-    }
+//    public void adiciona(Encaminhamento encaminhamento) {
+//        if (this.encaminhamentos == null) {
+//            this.encaminhamentos = new ArrayList<>();
+//        }
+//        if (encaminhamento == null) {
+//            throw new IllegalArgumentException("O encaminhamento não pode ser nulo!");
+//        }
+//
+//        this.encaminhamentos.add(encaminhamento);
+//    }
+//
+//    public void removeEncaminhamento(Encaminhamento encaminhamento) {
+//        if (this.encaminhamentos == null) {
+//            this.encaminhamentos = new ArrayList<>();
+//        }
+//
+//        if (this.encaminhamentos.size() == 0) {
+//            throw new ArrayIndexOutOfBoundsException("A lista de encaminhamentos está vazia!");
+//        }
+//
+//        this.encaminhamentos.remove(encaminhamento);
+//    }
+//
+//    public void cancelaVotacao(){
+//        this.primeiroTurno = null;
+//        this.segundoTurno = null;
+//    }
 
-    @Override
-    public String toString() {
-        return "ItemDePauta{" +
-                "id=" + id +
-                ", relator='" + relator + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", encaminhamentos=" + encaminhamentos +
-                ", temSegundoTurno=" + temSegundoTurno +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ItemDePauta that = (ItemDePauta) o;
-        return isTemSegundoTurno() == that.isTemSegundoTurno() &&
-                Objects.equals(getId(), that.getId()) &&
-                Objects.equals(getRelator(), that.getRelator()) &&
-                Objects.equals(getDescricao(), that.getDescricao()) &&
-                Objects.equals(getEncaminhamentos(), that.getEncaminhamentos());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getRelator(), getDescricao(), getEncaminhamentos(), isTemSegundoTurno());
-    }
-
-    @Override
-    public int compareTo(ItemDePauta o) {
-        if (this.getOrdem() > o.getOrdem()) {
-            return 1;
-        }
-        if (this.getOrdem() < o.getOrdem()) {
-            return -1;
-        }
-        return 0;
-    }
-*/
 }
