@@ -2,6 +2,7 @@
 
 namespace Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
 
 
@@ -46,7 +47,7 @@ class ItemDePauta
     private $reuniao;
 
     /**
-     * @Column(nullable = true)
+     * @Column(nullable=true)
      * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"})
      */
     private $encaminhamentos;

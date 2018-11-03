@@ -19,11 +19,11 @@ class Votacao
 
     /**
      * @Column(type="boolean", nullable=false)
-     */
+    */
     private $votacaoAberta = false;
 
     /**
-     * @OneToOne(targetEntity="Urna", mappedBy="urnas", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Urna", cascade={"persist", "remove", "merge"}, orphanRemoval=true)
      * @JoinColumn(name="urna_id", referencedColumnName="id")
      */
     private $urna;

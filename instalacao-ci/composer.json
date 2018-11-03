@@ -1,7 +1,9 @@
 {
     "name": "wildlyinaccurate/codeigniter-2-with-doctrine-2",
     "require": {
-        "doctrine/orm": "2.5.0"
+        "doctrine/orm": "2.5.0",
+        "luthier/luthier": "^1.0",
+        "rougin/credo": "^0.4.0"
     },
     "authors": [
         {

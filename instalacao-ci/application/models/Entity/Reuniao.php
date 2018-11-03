@@ -2,11 +2,12 @@
 
 namespace Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
 
 
 /**
- * @Entity
+ * @Entity(repositoryClass="repositories\Reunioes_repository")
  * @Table(name="reunioes")
  */
 class Reuniao
@@ -45,18 +46,18 @@ class Reuniao
     private $tipoDaReuniao;
 
     /**
-     * @ManyToMany(targetEntity="Membro", mappedBy="reunioes")
+     * @ManyToMany(targetEntity="Entity\Membro", mappedBy="reunioes")
      * @JoinTable(name="membros_reunioes")
      */
     private $membros;
 
     /**
-     * @OneToOne(targetEntity="Moderador")
+     * @OneToOne(targetEntity="Entity\Moderador")
      */
     private $moderador;
 
     /**
-     * @OneToMany(targetEntity="ItemDePauta", mappedBy="reuniao")
+     * @OneToMany(targetEntity="Entity\ItemDePauta", mappedBy="reuniao")
      */
     private $itensDePauta;
 

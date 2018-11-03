@@ -2,7 +2,6 @@
 
 namespace Entity;
 
-
 /**
  * @Entity
  * @Table(name="encaminhamentos")
@@ -29,6 +28,7 @@ class Encaminhamento
 
     /**
      * @ManyToOne(targetEntity="ItemDePauta", inversedBy="encaminhamentos")
+     * @JoinColumn(name="product_id", referencedColumnName="id")
      */
     private $itemDePauta;
 

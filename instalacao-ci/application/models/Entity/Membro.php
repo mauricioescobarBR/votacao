@@ -2,12 +2,13 @@
 
 namespace Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
 
 
 /**
  * @Entity
- * @Table(name = "membros")
+ * @Table(name="membros")
  */
 class Membro
 {
@@ -25,7 +26,7 @@ class Membro
     private $nome;
 
     /**
-     * @ManyToMany(targetEntity="Reuniao", mappedBy="membros")
+     * @ManyToMany(targetEntity="\Entity\Reuniao", mappedBy="membros")
      */
     private $reunioes;
 
