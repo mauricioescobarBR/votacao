@@ -5,6 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class TestItemPauta extends \CI_Controller
 {
 
+    // variável fixa, para testar operações de get, insert e etc...
+    private $TAMANHO_BANCO = 7;
     // variáveis comuns para todas as operações com banco de dados
     private $credo;
     private $repository;
@@ -35,6 +37,7 @@ class TestItemPauta extends \CI_Controller
     {
         $this->get_all();
         $this->get_item_pauta();
+        $this->set_item_pauta();
     }
 
     /**
@@ -46,7 +49,7 @@ class TestItemPauta extends \CI_Controller
         $test_name = "Get all Itens De Pauta";
         $IDP = $this->repository->findAll();
         $test = sizeof($IDP);
-        $expected_result = 7;
+        $expected_result = $this->TAMANHO_BANCO;
         echo $this->unit->run($test, $expected_result, $test_name);
     }
 
@@ -57,35 +60,35 @@ class TestItemPauta extends \CI_Controller
     public function get_item_pauta()
     {
         $test_name = "Get item de pauta 5";
-        $IDP = $this->repository->getById(5);
+        $IDP = $this->repository->find(5);
         $test = $IDP->getRelator();
         $expected_result = "Mauricio El Uri";
         echo $this->unit->run($test, $expected_result, $test_name);
     }
 
-    /*public function setItemPauta()
+
+    public function set_item_pauta()
     {
-
+        $test_name = "Salvar item de pauta";
         $IDP = $this->criaIDP();
-        $em = $this->doctrine->em;
 
-        $em->persist($IDP);
-        $em->flush();
+        $this->repository->persist($IDP);
+        $this->repository->flush();
 
-        $test = true;
-        $expected_result = true;
-        $test_name = "Salvar ItemDePauta";
+        $itens_pauta = $this->repository->findAll();
+        $test = sizeof($IDP);
+
+        $expected_result = $this->TAMANHO_BANCO+1;
         echo $this->unit->run($test, $expected_result, $test_name);
     }
 
     private function criaIDP()
     {
-        $IDP = new \Entity\ItemDePauta;
+        $IDP = new \Entity\ItemDePauta();
         $IDP->setDescricao("Item de pauta demonstração");
         $IDP->setRelator("Joselino Falcão");
         $IDP->setTemSegundoTurno(0);
         $IDP->setOrdem(1);
-
         return $IDP;
-    }*/
+    }
 }

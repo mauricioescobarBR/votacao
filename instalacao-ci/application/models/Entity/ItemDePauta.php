@@ -18,8 +18,7 @@ class ItemDePauta
      */
     public function __construct()
     {
-        parent::__construct();
-        //$this->encaminhamentos = new ArrayCollection();
+        $this->encaminhamentos = new ArrayCollection();
     }
 
 

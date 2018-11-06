@@ -13,7 +13,6 @@ class Itens_de_pauta_repository extends EntityRepository implements ItensDePauta
 
     function test(ItemDePauta $itp)
     {
-
         //if ($reuniao->getEstaAberta()) {
 //            $this->save($reuniao);
 //        } else {
