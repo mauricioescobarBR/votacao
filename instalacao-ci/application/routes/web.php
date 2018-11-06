@@ -31,3 +31,5 @@ Route::set('404_override', function () {
 Route::set('translate_uri_dashes', FALSE);
 
 Route::get('reunioes', 'ReuniaoController@index');
+
+Route::get('item_pauta', 'tests/TestItemPauta@index');

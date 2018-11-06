@@ -4,6 +4,7 @@ namespace Entity;
 
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Rougin\Credo\Model;
 
 
 /**
@@ -12,6 +13,15 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class ItemDePauta
 {
+    /**
+     * ItemDePauta constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        //$this->encaminhamentos = new ArrayCollection();
+    }
+
 
     /**
      * @Id
@@ -61,14 +71,6 @@ class ItemDePauta
      * @Column(type="integer", nullable=false)
      */
     private $ordem;
-
-    /**
-     * ItemDePauta constructor.
-     */
-    public function __construct()
-    {
-        $this->encaminhamentos = new ArrayCollection();
-    }
 
     /**
      * @return mixed
