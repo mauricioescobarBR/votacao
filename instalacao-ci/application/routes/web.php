@@ -32,4 +32,6 @@ Route::set('translate_uri_dashes', FALSE);
 
 Route::get('reunioes', 'ReuniaoController@index');
 
-Route::get('item_pauta', 'tests/TestItemPauta@index');
+Route::get('test_item_pauta', 'tests/TestItemPauta@index');
+
+Route::get('test_encaminhamento', 'tests/TestEncaminhamento@index');

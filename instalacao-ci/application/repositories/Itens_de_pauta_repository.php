@@ -11,13 +11,9 @@ use Rougin\Credo\EntityRepository;
 class Itens_de_pauta_repository extends EntityRepository implements ItensDePauta
 {
 
-    function test(ItemDePauta $itp)
+    function salvar(ItemDePauta $itp)
     {
-        //if ($reuniao->getEstaAberta()) {
-//            $this->save($reuniao);
-//        } else {
-//            throw new \InvalidArgumentException("A reunião não pôde ser aberta.");
-//        }
+    //    $this->save($itp);
     }
 
 

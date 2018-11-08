@@ -9,9 +9,9 @@
 namespace Entity;
 
 
-interface ItensDePauta
+interface Encaminhamentos
 {
 
-    function salvar(ItemDePauta $idp);
+    function salvar(Encaminhamento $enc);
 
 }

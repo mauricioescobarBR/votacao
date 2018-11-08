@@ -6,7 +6,7 @@ class TestItemPauta extends \CI_Controller
 {
 
     // variável fixa, para testar operações de get, insert e etc...
-    private $TAMANHO_BANCO = 7;
+    private $TAMANHO_BANCO = 9;
     // variáveis comuns para todas as operações com banco de dados
     private $credo;
     private $repository;
@@ -38,6 +38,7 @@ class TestItemPauta extends \CI_Controller
         $this->get_all();
         $this->get_item_pauta();
         $this->set_item_pauta();
+        //$this->deleta_item_pauta();
     }
 
     /**
@@ -72,13 +73,43 @@ class TestItemPauta extends \CI_Controller
         $test_name = "Salvar item de pauta";
         $IDP = $this->criaIDP();
 
-        $this->repository->persist($IDP);
-        $this->repository->flush();
+        // Salvando item de pauta
+        $em = $this->doctrine->em;
+        $em->persist($IDP);
+        $em->flush();
 
+        // Verificando se foi salvo no bd
         $itens_pauta = $this->repository->findAll();
-        $test = sizeof($IDP);
+        $test = sizeof($itens_pauta);
 
+        // Tamanho do banco deve ser igual ao original + 1
         $expected_result = $this->TAMANHO_BANCO+1;
+        echo $this->unit->run($test, $expected_result, $test_name);
+    }
+
+
+    /**
+     * Não está funcionando
+     **/
+
+     public function deleta_item_pauta(){
+        $test_name = "Deletar item de pauta";
+
+        $IDP = $this->repository->find(10);
+
+        echo $IDP->getDescricao();
+
+        $em = $this->doctrine->em;
+        $IDP = $em->detach($IDP);
+        $em->remove($IDP);
+        $em->flush();
+
+        // Verificando se foi removido do bd
+        $test = $this->repository->find(10);
+
+        var_dump($test);
+
+        $expected_result = false;
         echo $this->unit->run($test, $expected_result, $test_name);
     }
 
