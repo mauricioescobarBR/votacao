@@ -52,7 +52,7 @@ class Reuniao
     private $membros;
 
     /**
-     * @OneToOne(targetEntity="Entity\Moderador")
+     * @ManyToOne(targetEntity="Entity\Moderador", inversedBy="reunioes")
      */
     private $moderador;
 

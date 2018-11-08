@@ -69,36 +69,46 @@
             Clique no botão para abrir uma reunião para os membros poderem se registrar.</p>
     </div>
 
-    <!--    --><?php //foreach ($reunioes as $reuniao) {
-    //        echo $reuniao->getId();
-    //    } ?>
+    <form id="form_reuniao">
+        <div class="list-group">
+            <?php foreach ($reunioes as $reuniao): ?>
 
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action d-flex
-            justify-content-between align-items-center">
-            <span>Dapibus ac facilisis in</span>
-            <!--<input type="checkbox" id="switch4"/><label class="no-margin" for="switch4"></label>-->
-            <button type="button" class="btn btn-outline-success">Success</button>
-        </a>
+                <div class="list-group-item list-group-item-action d-flex
+                    justify-content-between align-items-center">
+                    <span><?php echo $reuniao->getDescricao() ?></span>
+                    <!--<input type="checkbox" id="switch4"/><label class="no-margin" for="switch4"></label>-->
+                    <a href="" data-toggle="modal"
+                            onclick="confirm_reuniao_modal('<?php echo route('abrir_reuniao', $reuniao->getId()); ?>','<?php echo $reuniao->getDescricao() ?>', '<?php echo $reuniao->getEstaAberta() ? "fechar" : "abrir"; ?>');"
+                            data-target="#reuniao_modal"
+                            class="btn <?php echo $reuniao->getEstaAberta() ? "btn-outline-success" : "btn-outline-secondary"; ?> btn-reuniao">
+                        <?php echo $reuniao->getEstaAberta() ? "Aberta" : "Fechada"; ?>
+                    </a>
+                </div>
 
-        <a href="#" class="list-group-item list-group-item-action d-flex
-            justify-content-between align-items-center">
-            <span>Dapibus ac facilisis in</span>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-        </a>
+            <?php endforeach; ?>
+        </div>
 
-        <a href="#" class="list-group-item list-group-item-action d-flex
-            justify-content-between align-items-center">
-            <span>Dapibus ac facilisis in</span>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-        </a>
+        <div id="reuniao_modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><span class="is_open"></span> Reunião</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tem certeza de que deseja <span class="is_open font-weight-bold"></span> a reunião "<span
+                                        class="grt font-weight-bold"></span>"</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="reuniao_abrir_link" class="btn btn-success" formaction="" formmethod="post">Confirmar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+    </form>
 
-        <a href="#" class="list-group-item list-group-item-action d-flex
-            justify-content-between align-items-center">
-            <span>Dapibus ac facilisis in</span>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-        </a>
-    </div>
 </div>
 
 <div class="row">
