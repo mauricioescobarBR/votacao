@@ -2,11 +2,11 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class TestEncaminhamento extends \CI_Controller
+class TestEncaminhamentos extends \CI_Controller
 {
 
     // variável fixa, para testar operações de get, insert e etc...
-    private $TAMANHO_BANCO = 0;
+    private $TAMANHO_BANCO = 15;
     // variáveis comuns para todas as operações com banco de dados
     private $credo;
     private $repository;
@@ -24,7 +24,6 @@ class TestEncaminhamento extends \CI_Controller
         $this->load->library(array('session', 'form_validation', 'unit_test'));
         $this->load->repository('Encaminhamento');
         $this->load->database();
-
         $this->credo = new Rougin\Credo\Credo($this->db);
         $this->repository = $this->credo->get_repository('Entity\Encaminhamento');
     }
@@ -37,7 +36,7 @@ class TestEncaminhamento extends \CI_Controller
     {
         $this->get_all();
         //$this->get_item_pauta();
-        //$this->set_item_pauta();
+        $this->set_encaminhamento();
         //$this->deleta_item_pauta();
     }
 
@@ -61,38 +60,43 @@ class TestEncaminhamento extends \CI_Controller
     //public function get_item_pauta()
 //    {
 //        $test_name = "Get item de pauta 5";
-  //      $IDP = $this->repository->find(5);
+    //      $IDP = $this->repository->find(5);
 //        $test = $IDP->getRelator();
 //        $expected_result = "Mauricio El Uri";
 //        echo $this->unit->run($test, $expected_result, $test_name);
 //    }
 
 
-//    public function set_item_pauta()
-    //{
-//        $test_name = "Salvar item de pauta";
-//        $IDP = $this->criaIDP();
-//
-//        // Salvando item de pauta
-//        $em = $this->doctrine->em;
-//        $em->persist($IDP);
-//        $em->flush();
+    public function set_encaminhamento()
+    {
+        $test_name = "Salvar encaminhamento";
+
+        $IDP = new Entity\ItemDePauta();
+        $IDP = $this->repository->find(5);
+
+        $encaminhamento = $this->criaEncaminhamento($IDP);
+
+        // Salvando encaminhamento
+        $em = $this->doctrine->em;
+
+        $em->persist($encaminhamento);
+        $em->flush();
 
         // Verificando se foi salvo no bd
-  //      $itens_pauta = $this->repository->findAll();
-//        $test = sizeof($itens_pauta);
+        $encaminhamentos = $this->repository->findAll();
+        $test = sizeof($encaminhamentos);
 
         // Tamanho do banco deve ser igual ao original + 1
-  //      $expected_result = $this->TAMANHO_BANCO+1;
-//        echo $this->unit->run($test, $expected_result, $test_name);
-//    }
+        $expected_result = $this->TAMANHO_BANCO+1;
+        echo $this->unit->run($test, $expected_result, $test_name);
+    }
 
 
     /**
      * Não está funcionando
      **/
 
-  //  public function deleta_item_pauta(){
+    //  public function deleta_item_pauta(){
 //        $test_name = "Deletar item de pauta";
 //
 //        $IDP = $this->repository->find(10);
@@ -101,25 +105,24 @@ class TestEncaminhamento extends \CI_Controller
 
 //        $em = $this->doctrine->em;
 //        $IDP = $em->detach($IDP);
-  //      $em->remove($IDP);
+    //      $em->remove($IDP);
 //        $em->flush();
 
-        // Verificando se foi removido do bd
-  //      $test = $this->repository->find(10);
+    // Verificando se foi removido do bd
+    //      $test = $this->repository->find(10);
 
 //        var_dump($test);
 
-  //      $expected_result = false;
+    //      $expected_result = false;
 //        echo $this->unit->run($test, $expected_result, $test_name);
-  //  }
+    //  }
 
-//    private function criaIDP()
-//    {
-//        $IDP = new \Entity\ItemDePauta();
-//        $IDP->setDescricao("Item de pauta demonstração");
-//        $IDP->setRelator("Joselino Falcão");
-//        $IDP->setTemSegundoTurno(0);
-//        $IDP->setOrdem(1);
-//        return $IDP;
-//    }
+    private function criaEncaminhamento($IDP)
+    {
+        $encaminhamento = new Entity\Encaminhamento();
+        $encaminhamento->setDescricao("À favor");
+        //$encaminhamento->setItemDePauta($IDP);
+
+        return $encaminhamento;
+    }
 }

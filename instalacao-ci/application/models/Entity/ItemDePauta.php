@@ -13,6 +13,7 @@ use Rougin\Credo\Model;
  */
 class ItemDePauta
 {
+
     /**
      * ItemDePauta constructor.
      */

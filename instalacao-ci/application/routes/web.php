@@ -34,4 +34,4 @@ Route::get('reunioes', 'ReuniaoController@index');
 
 Route::get('test_item_pauta', 'tests/TestItemPauta@index');
 
-Route::get('test_encaminhamento', 'tests/TestEncaminhamento@index');
+Route::get('test_encaminhamento', 'tests/TestEncaminhamentos@index');
