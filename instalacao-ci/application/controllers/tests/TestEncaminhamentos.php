@@ -6,7 +6,7 @@ class TestEncaminhamentos extends \CI_Controller
 {
 
     // variável fixa, para testar operações de get, insert e etc...
-    private $TAMANHO_BANCO = 15;
+    private $tamanho_banco;
     // variáveis comuns para todas as operações com banco de dados
     private $credo;
     private $repository;
@@ -48,9 +48,9 @@ class TestEncaminhamentos extends \CI_Controller
     {
         $test_name = "Get all Encaminhamentos";
         $enc = $this->repository->findAll();
-        $test = sizeof($enc);
-        $expected_result = $this->TAMANHO_BANCO;
-        echo $this->unit->run($test, $expected_result, $test_name);
+        $this->tamanho_banco = sizeof($enc);
+        $expected_result = $this->tamanho_banco >= 0;
+        echo $this->unit->run($this->tamanho_banco, $expected_result, $test_name);
     }
 
     /**
@@ -87,7 +87,7 @@ class TestEncaminhamentos extends \CI_Controller
         $test = sizeof($encaminhamentos);
 
         // Tamanho do banco deve ser igual ao original + 1
-        $expected_result = $this->TAMANHO_BANCO+1;
+        $expected_result = $this->tamanho_banco+1;
         echo $this->unit->run($test, $expected_result, $test_name);
     }
 

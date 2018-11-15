@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class TestItemPauta extends \CI_Controller
+class TestItemPautaEncaminhamentos extends \CI_Controller
 {
 
     // variável fixa, para testar operações de get, insert e etc...
@@ -92,7 +92,7 @@ class TestItemPauta extends \CI_Controller
      * Não está funcionando
      **/
 
-     public function deleta_item_pauta(){
+    public function deleta_item_pauta(){
         $test_name = "Deletar item de pauta";
 
         $IDP = $this->repository->find(10);

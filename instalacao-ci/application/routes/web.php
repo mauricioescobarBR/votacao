@@ -35,3 +35,5 @@ Route::get('reunioes', 'ReuniaoController@index');
 Route::get('test_item_pauta', 'tests/TestItemPauta@index');
 
 Route::get('test_encaminhamento', 'tests/TestEncaminhamentos@index');
+
+Route::get('test_ip_enc', 'tests/TestItemPautaEncaminhamentos@index');
