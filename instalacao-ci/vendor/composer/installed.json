@@ -1277,5 +1277,119 @@
         ],
         "description": "Symfony Console Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/http-foundation",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/http-foundation.git",
+            "reference": "82d494c1492b0dd24bbc5c2d963fb02eb44491af"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/82d494c1492b0dd24bbc5c2d963fb02eb44491af",
+            "reference": "82d494c1492b0dd24bbc5c2d963fb02eb44491af",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-mbstring": "~1.1"
+        },
+        "require-dev": {
+            "predis/predis": "~1.0",
+            "symfony/expression-language": "~3.4|~4.0"
+        },
+        "time": "2018-10-31T09:09:42+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\HttpFoundation\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpFoundation Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "tonyhhyip/sse",
+        "version": "2.1.3",
+        "version_normalized": "2.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tonyhhyip/libSSE-php.git",
+            "reference": "804af074e46247b5d9290b509c5cab8de523c93a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tonyhhyip/libSSE-php/zipball/804af074e46247b5d9290b509c5cab8de523c93a",
+            "reference": "804af074e46247b5d9290b509c5cab8de523c93a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9",
+            "symfony/http-foundation": "~2.7 | ~3.0 | ~4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.2 | ~5.0"
+        },
+        "suggest": {
+            "predis/predis": "For using RedisMechnism",
+            "symfony/polyfill-apcu": "For APCMecnism on PHP < 7.0"
+        },
+        "time": "2018-03-08T02:55:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Sse\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Licson Lee",
+                "email": "licson0729@gmail.com",
+                "homepage": "https://licson.net/",
+                "role": "Owner"
+            },
+            {
+                "name": "Tony Yip",
+                "email": "tony@opensource.hk",
+                "homepage": "https://github.com/tonyhhyip",
+                "role": "Developer"
+            }
+        ],
+        "description": "An easy-to-use, object-oriented library for Server-Sent Events",
+        "homepage": "https://github.com/licson0729/libSSE-php",
+        "keywords": [
+            "sse"
+        ]
     }
 ]

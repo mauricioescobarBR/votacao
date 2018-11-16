@@ -18,8 +18,10 @@ class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Sse\\' => 4,
         ),
         'R' => 
         array (
@@ -57,6 +59,10 @@ class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\HttpFoundation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
@@ -64,6 +70,10 @@ class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Sse\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tonyhhyip/sse/src',
         ),
         'Rougin\\SparkPlug\\' => 
         array (

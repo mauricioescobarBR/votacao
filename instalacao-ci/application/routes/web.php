@@ -18,18 +18,20 @@
  *      -> $route['blog/(:any)'] = 'blog/post/$1'
  */
 
-Route::get('/', function(){
-   luthier_info();
+Route::get('/', function () {
+    luthier_info();
 })->name('homepage');
 
-Route::set('404_override', function(){
+Route::set('404_override', function () {
     show_404();
 });
 
-Route::set('translate_uri_dashes',FALSE);
+Route::set('translate_uri_dashes', FALSE);
 
-Route::group('reunioes', function(){
+Route::group('reunioes', function () {
     Route::get('', 'ReuniaoController@index');
     Route::post('{id}/esta_aberta', 'ReuniaoController@abrirReuniao')->name('abrir_reuniao');
     Route::get('{id}/esta_aberta', 'ReuniaoController@mostraReuniao')->name('mostra_reuniao');
 });
+
+Route::get('{id}/membros/{token}', 'ReuniaoController@resgitraReuniao');
