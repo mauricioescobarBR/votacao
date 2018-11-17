@@ -9,7 +9,8 @@ class TestEncaminhamentos extends \CI_Controller
     private $tamanho_banco;
     // variáveis comuns para todas as operações com banco de dados
     private $credo;
-    private $repository;
+    private $encaminhamentoRepository;
+    private $itemDePautaRepository;
 
     /**
      * TestEncaminhamento constructor.
@@ -23,9 +24,11 @@ class TestEncaminhamentos extends \CI_Controller
         parent::__construct();
         $this->load->library(array('session', 'form_validation', 'unit_test'));
         $this->load->repository('Encaminhamento');
+        $this->load->repository('ItensDePauta');
         $this->load->database();
         $this->credo = new Rougin\Credo\Credo($this->db);
-        $this->repository = $this->credo->get_repository('Entity\Encaminhamento');
+        $this->encaminhamentoRepository = $this->credo->get_repository('Entity\Encaminhamento');
+        $this->itemDePautaRepository = $this->credo->get_repository('Entity\ItemDePauta');
     }
 
 
@@ -34,10 +37,11 @@ class TestEncaminhamentos extends \CI_Controller
      */
     public function index()
     {
-        $this->get_all();
+//        $this->get_all();
         //$this->get_item_pauta();
-        $this->set_encaminhamento();
+//        $this->set_encaminhamento();
         //$this->deleta_item_pauta();
+        $this->criaIDP();
     }
 
     /**
@@ -47,7 +51,7 @@ class TestEncaminhamentos extends \CI_Controller
     public function get_all()
     {
         $test_name = "Get all Encaminhamentos";
-        $enc = $this->repository->findAll();
+        $enc = $this->encaminhamentoRepository->findAll();
         $this->tamanho_banco = sizeof($enc);
         $expected_result = $this->tamanho_banco >= 0;
         echo $this->unit->run($this->tamanho_banco, $expected_result, $test_name);
@@ -72,7 +76,7 @@ class TestEncaminhamentos extends \CI_Controller
         $test_name = "Salvar encaminhamento";
 
         $IDP = new Entity\ItemDePauta();
-        $IDP = $this->repository->find(5);
+        $IDP = $this->encaminhamentoRepository->find(5);
 
         $encaminhamento = $this->criaEncaminhamento($IDP);
 
@@ -83,7 +87,7 @@ class TestEncaminhamentos extends \CI_Controller
         $em->flush();
 
         // Verificando se foi salvo no bd
-        $encaminhamentos = $this->repository->findAll();
+        $encaminhamentos = $this->encaminhamentoRepository->findAll();
         $test = sizeof($encaminhamentos);
 
         // Tamanho do banco deve ser igual ao original + 1
@@ -117,12 +121,35 @@ class TestEncaminhamentos extends \CI_Controller
 //        echo $this->unit->run($test, $expected_result, $test_name);
     //  }
 
-    private function criaEncaminhamento($IDP)
+    private function criaEncaminhamento($nome, $item)
     {
         $encaminhamento = new Entity\Encaminhamento();
-        $encaminhamento->setDescricao("À favor");
-        //$encaminhamento->setItemDePauta($IDP);
+        $encaminhamento->setDescricao("À favor - " . $nome);
+        $encaminhamento->setItemDePauta($item);
+
+        $encaminhamento = $this->encaminhamentoRepository->salvar($encaminhamento);
 
         return $encaminhamento;
+    }
+
+    private function criaIDP()
+    {
+        $IDP = new Entity\ItemDePauta();
+        $IDP->setDescricao("Item de pauta para demonstração");
+        $IDP->setRelator("Joselino Falcão Jr.");
+        $IDP->setTemSegundoTurno(0);
+        $IDP->setOrdem(1);
+
+        $itemSalvo = $this->itemDePautaRepository->salvar($IDP);
+
+        for ($index = 0; $index < 3; $index++)
+        {
+            $itemSalvo->adicionaEncaminhamento($this->criaEncaminhamento($index, $itemSalvo));
+        }
+
+        $itemSalvo = $this->itemDePautaRepository->salvar($itemSalvo);
+
+        dump($itemSalvo);
+        return $itemSalvo;
     }
 }

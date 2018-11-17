@@ -4,24 +4,14 @@ namespace Entity;
 
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Rougin\Credo\Model;
 
 
 /**
- * @Entity
+ * @Entity(repositoryClass="repositories\ItensDePauta_repository")
  * @Table(name="itens_de_pauta")
  */
 class ItemDePauta
 {
-
-    /**
-     * ItemDePauta constructor.
-     */
-    public function __construct()
-    {
-        //$this->encaminhamentos = new ArrayCollection();
-    }
-
 
     /**
      * @Id
@@ -32,7 +22,7 @@ class ItemDePauta
 
 
     /**
- * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
      */
     private $primeiroTurno;
 
@@ -58,7 +48,7 @@ class ItemDePauta
 
     /**
      * @Column(nullable=true)
-     * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"})
+     * @OneToMany(targetEntity="Entity\Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove", "merge", "refresh"})
      */
     private $encaminhamentos;
 
@@ -71,6 +61,14 @@ class ItemDePauta
      * @Column(type="integer", nullable=false)
      */
     private $ordem;
+
+    /**
+     * ItemDePauta constructor.
+     */
+    public function __construct()
+    {
+        $this->encaminhamentos = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -173,15 +171,15 @@ class ItemDePauta
      */
     public function getEncaminhamentos()
     {
-        return $this->encaminhamentos;
+        return $this->encaminhamentos->toArray();
     }
 
     /**
      * @param mixed $encaminhamentos
      */
-    public function setEncaminhamentos($encaminhamentos)
+    public function setEncaminhamentos(ArrayCollection $encaminhamentos)
     {
-        $this->encaminhamentos = new ArrayCollection($encaminhamentos);
+        $this->encaminhamentos = $encaminhamentos;
     }
 
     /**
@@ -214,6 +212,32 @@ class ItemDePauta
     public function setOrdem($ordem)
     {
         $this->ordem = $ordem;
+    }
+
+    /**
+     * @param Encaminhamento $encaminhamento
+     * @return $this
+     */
+    public function adicionaEncaminhamento(Encaminhamento $encaminhamento)
+    {
+        if (!$this->encaminhamentos->contains($encaminhamento)) {
+            $this->encaminhamentos->add($encaminhamento);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @param Encaminhamento $encaminhamento
+     * @return $this
+     */
+    public function removeEncaminhamento(Encaminhamento $encaminhamento)
+    {
+        if ($this->encaminhamentos->contains($encaminhamento)) {
+            $this->encaminhamentos->removeElement($encaminhamento);
+        }
+
+        return $this;
     }
 
 //    public void adiciona(Encaminhamento encaminhamento) {

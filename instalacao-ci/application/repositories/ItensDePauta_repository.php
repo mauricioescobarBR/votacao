@@ -3,11 +3,11 @@
 namespace repositories;
 
 
-use Entity\Encaminhamento;
-use Entity\Encaminhamentos;
+use Entity\ItemDePauta;
+use Entity\ItensDePauta;
 use Rougin\Credo\EntityRepository;
 
-class Encaminhamento_repository extends EntityRepository implements Encaminhamentos
+class ItensDePauta_repository extends EntityRepository implements ItensDePauta
 {
 
     public function getReference($id, $class = null)
@@ -32,9 +32,9 @@ class Encaminhamento_repository extends EntityRepository implements Encaminhamen
         $this->getEntityManager()->flush();
     }
 
-    function salvar(Encaminhamento $enc)
+    function salvar(ItemDePauta $idp)
     {
-        return $this->save($enc);
+        return $this->save($idp);
     }
 
 }

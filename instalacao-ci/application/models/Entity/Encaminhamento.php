@@ -2,8 +2,9 @@
 
 namespace Entity;
 
+
 /**
- * @Entity
+ * @Entity(repositoryClass="repositories\Encaminhamento_repository")
  * @Table(name="encaminhamentos")
  */
 class Encaminhamento
@@ -27,8 +28,7 @@ class Encaminhamento
     private $somaVoto = 0;
 
     /**
-     * @ManyToOne(targetEntity="ItemDePauta", inversedBy="encaminhamentos")
-     * @JoinColumn(name="product_id", referencedColumnName="id")
+     * @ManyToOne(targetEntity="Entity\ItemDePauta", inversedBy="encaminhamentos")
      */
     private $itemDePauta;
 
