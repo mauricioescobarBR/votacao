@@ -114,3 +114,18 @@ code {
   padding: 0 8px;
 }
 
+#btn-confirmacao{
+    background-color: green;
+    padding-left: 85.4px;
+    padding-right:85.4px;
+}
+#btn-cancelar{
+    padding-left: 85.4px;
+    padding-right:85.4px;
+}
+
+.group-btn-conf{
+    margin-top: 80px;
+}
+
+
