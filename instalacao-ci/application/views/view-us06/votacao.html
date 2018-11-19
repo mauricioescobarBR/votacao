@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="fundo-votação">
     <header>
         <section>
             <div class="container" id="titulo-da-votacao">
@@ -41,14 +42,20 @@
                 <input id="radio3" name="radio" type="radio" />
                 <label for="radio3">Abstenção</label>
             </div>
-            <div class="group-btn-conf">
-                
-                <button type="button" class="btn btn-success btn-lg" id="btn-confirmacao">Confirmar</button>
-                <button type="button" class="btn btn-danger btn-lg" id="btn-cancelar">Cancelar</button>
-                
-            </div>
         </form>
     </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 group-btn-conf"  align="center">
+                    <button type="button" class="btn btn-success btn-lg" id="btn-confirmacao">Confirmar</button>
+                    <button type="button" class="btn btn-danger btn-lg" id="btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 </body>
 <script src="bootstrap/js/bootstrap.min.js">
 </script>

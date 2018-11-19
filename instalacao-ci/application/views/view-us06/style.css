@@ -116,16 +116,14 @@ code {
 
 #btn-confirmacao{
     background-color: green;
-    padding-left: 85.4px;
-    padding-right:85.4px;
+    margin-right: 30px;
 }
 #btn-cancelar{
-    padding-left: 85.4px;
-    padding-right:85.4px;
+    margin-left: 30px;
 }
 
 .group-btn-conf{
-    margin-top: 80px;
+    margin-top: 40px;
 }
-
+.fundo votacao
 
