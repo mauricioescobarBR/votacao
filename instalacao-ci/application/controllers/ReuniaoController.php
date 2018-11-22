@@ -2,8 +2,8 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-include APPPATH . 'controllers\TimeEvent.php';
-use Sse\SSE;
+
+include APPPATH . 'controllers\ReuniaoSSEResource.php';
 
 class ReuniaoController extends CI_Controller
 {
@@ -49,15 +49,8 @@ class ReuniaoController extends CI_Controller
 
     public function resgitraReuniao($id, $token)
     {
-        // Create the SSE handler
-        $sse = new SSE();
-        // You can limit how long the SSE handler to save resources
-        $sse->exec_limit = 10;
-        // Add the event handler to the SSE handler
-        $sse->addEventListener('time', new TimeEvent());
-        // Kick everything off!
-        $response = $sse->createResponse();
-        $response->send();
+        $connection = ReuniaoSSEResource::getInstance();
+        $connection->conecta();
     }
 
     private function pegaRepositoryDeReuniao()
