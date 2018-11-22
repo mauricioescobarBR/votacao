@@ -19,7 +19,7 @@
             <div class="container" id="tituloItem">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <h2>Item de pauta</h2>
+                        <h2><?= $idp->getDescricao() ?></h2>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="container" id="reuniao">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <p>Donec fermentum, ante in tempus accumsan, velit ipsum lacinia enim, a interdum enim enim id metus. Aliquam vitae accumsan neque. Etiam nibh metus, suscipit vel erat iaculis, aliquet elementum metus. Curabitur ultricies risus quis tortor blandit cursus et id turpis.</p>
+                        <p>Relator: <?= $idp->getRelator() ?></p>
                     </div>
                 </div>
             </div>
