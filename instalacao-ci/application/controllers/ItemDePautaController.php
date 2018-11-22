@@ -8,11 +8,12 @@ class ItemDePautaController extends CI_Controller {
     private $itemDePautaRepository;
 
     public function __construct() {
-        //parent:: __construct();
-        //$this->load->helper(array('form', 'utility', 'secao', 'mensagens'));
+        parent::__construct();
+       // , 'utility'));
+//        , 'secao', 'mensagens'));
+
         //$this->load->library(array('session', 'form_validation', 'doctrine'));
         //$this->load->model(array('m_admin', 'm_token', 'm_site'));
-        parent::__construct();
         $this->load->library(array('session', 'form_validation', 'unit_test'));
         $this->load->repository('Encaminhamento');
         $this->load->repository('ItensDePauta');
@@ -27,7 +28,11 @@ class ItemDePautaController extends CI_Controller {
      * como parâmetro.
      * @param $id
      */
-	public function set_encaminhamento($id){
+	public function set_encaminhamentos(){
+	    echo base_url();
+	    $id_ip = $this->input->post("item_pauta_id");
+	    var_dump($id_ip);
+	  /*  $idp = $this->get_ip()
         //$group = new Entity\ItemDePauta;
         //$this->load->('');
 
@@ -38,16 +43,54 @@ class ItemDePautaController extends CI_Controller {
             return false;
         }
         $this->load->view("encaminhamento", $dados);
+	  */
 
 	}
 
-	private function get_ip($id)
+	public function item_pauta($id)
     {
-        $IDP = $this->itemDePautaRepository->find($id);
-        if ($IDP == null){
+        $dados['idp'] = $this->get_ip($id);
+        if ($dados['idp'] == null)
+        {
+            echo "Não encontrado!";
             return false;
         }
-        return $IDP;
+        return $this->load->view("encaminhamento", $dados);
+    }
+
+	private function get_ip($id)
+    {
+        return $this->itemDePautaRepository->find($id);
+    }
+
+    /**
+     * Recebe o item de pauta (já com get do banco)
+     * @param $item_pauta
+     */
+    private function set_encam($item_pauta, $encaminhamentos)
+    {
+        foreach ($encaminhamentos as $encaminhamento)
+        {
+            $item_pauta->adicionaEncaminhamento($this->criaEncaminhamento($encaminhamento, $item_pauta));
+        }
+/*        for ($index = 0; $index < 3; $index++)
+        {
+            $itemSalvo->adicionaEncaminhamento($this->criaEncaminhamento($index, $itemSalvo));
+        }
+*/
+
+        $item_pauta = $this->itemDePautaRepository->salvar($item_pauta);
+    }
+
+    private function criaEncaminhamento($descricao, $item)
+    {
+        $encaminhamento = new Entity\Encaminhamento();
+        $encaminhamento->setDescricao($descricao);
+        $encaminhamento->setItemDePauta($item);
+
+        $encaminhamento = $this->encaminhamentoRepository->salvar($encaminhamento);
+
+        return $encaminhamento;
     }
 
     private function criaIDP()

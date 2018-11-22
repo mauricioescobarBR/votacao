@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-2">
                         <h6>Escolha uma opção de voto</h6>
-                        <form>
+                        <?= form_open() ?>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
                                 <label class="custom-control-label" for="customRadio1">Opção de voto padrão</label>
@@ -47,7 +47,7 @@
                                 <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadio2">Opção de voto customizado</label>
                             </div>
-                        </form>
+                        <?= form_close() ?>
                     </div>
                 </div>
             </div>
@@ -105,15 +105,20 @@
                 </div>
             </div>
         </section>
+        <!-- FORMULÁRIO -->
         <section>
+            <?= form_open('/set_encaminhamentos') ?>
+            <input type="hidden" name="item_pauta_id" value="<?= $idp->getId() ?>" />
             <div class="container" id="btn-enviarItem">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 d-flex justify-content-center ">
-                        <button type="button" class="btn btn-success btn-lg btn-block">Enviar item para a votação</button>
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Enviar item para a votação</button>
                     </div>
                 </div>
             </div>
+            <?= form_close() ?>
         </section>
+        <!-- FORMULÁRIO -->
     </main>
     <script src="bootstrap/js/bootstrap.min.js">
     </script>
