@@ -29,21 +29,31 @@ class ItemDePautaController extends CI_Controller {
      * @param $id
      */
 	public function set_encaminhamentos(){
-	    echo base_url();
 	    $id_ip = $this->input->post("item_pauta_id");
-	    var_dump($id_ip);
-	  /*  $idp = $this->get_ip()
+	    $idp = $this->get_ip($id_ip);
+
+	    $descricoes = array (
+	      1 => "À favor",
+          2 => "Contra",
+          3 => "Abstenção"
+        );
+
+	    $this->set_encam($idp, $descricoes);
+
+	    return true;
+
+
         //$group = new Entity\ItemDePauta;
         //$this->load->('');
 
-        $dados['idp'] = $this->get_ip($id);
+    /*    $dados['idp'] = $this->get_ip($id);
         if ($dados['idp'] == null)
         {
             echo "Não encontrado!";
             return false;
         }
         $this->load->view("encaminhamento", $dados);
-	  */
+*/
 
 	}
 
@@ -67,11 +77,11 @@ class ItemDePautaController extends CI_Controller {
      * Recebe o item de pauta (já com get do banco)
      * @param $item_pauta
      */
-    private function set_encam($item_pauta, $encaminhamentos)
+    private function set_encam($item_pauta, $descricoes)
     {
-        foreach ($encaminhamentos as $encaminhamento)
+        foreach ($descricoes as $descricao)
         {
-            $item_pauta->adicionaEncaminhamento($this->criaEncaminhamento($encaminhamento, $item_pauta));
+            $item_pauta->adicionaEncaminhamento($this->criaEncaminhamento($descricao, $item_pauta));
         }
 /*        for ($index = 0; $index < 3; $index++)
         {
@@ -80,6 +90,7 @@ class ItemDePautaController extends CI_Controller {
 */
 
         $item_pauta = $this->itemDePautaRepository->salvar($item_pauta);
+        dump($item_pauta);
     }
 
     private function criaEncaminhamento($descricao, $item)

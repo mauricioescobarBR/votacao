@@ -38,7 +38,6 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-2">
                         <h6>Escolha uma opção de voto</h6>
-                        <?= form_open() ?>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
                                 <label class="custom-control-label" for="customRadio1">Opção de voto padrão</label>
@@ -47,7 +46,6 @@
                                 <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadio2">Opção de voto customizado</label>
                             </div>
-                        <?= form_close() ?>
                     </div>
                 </div>
             </div>
@@ -74,29 +72,19 @@
                 <div id="list-itens" class="row">
                     <div class="col-md-8 offset-2">
                         <table class="table table-striped" cellspacing="0" cellpadding="0">
+
+                            <?= form_open('/set_encaminhamentos') ?>
+
                             <thead>
                                 <tr>
                                     <th>Opções de voto</th>
                                     <th class="actions">Ação</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="lista-encaminhamentos">
                                 <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td><input type="text" name="enc1" value="Abstenção" disabled/></td>
                                     <td class="actions">
-                                        <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                    <td class="actions">
-                                        <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                    <td class="actions">
-                                        <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -107,14 +95,20 @@
         </section>
         <!-- FORMULÁRIO -->
         <section>
-            <?= form_open('/set_encaminhamentos') ?>
             <input type="hidden" name="item_pauta_id" value="<?= $idp->getId() ?>" />
+            <input type="text" name="tipo_encam" value="simples" id="tipo_encam"/>
             <div class="container" id="btn-enviarItem">
+               <!--
+
+
                 <div class="row">
                     <div class="col-md-6 offset-md-3 d-flex justify-content-center ">
                         <button type="submit" class="btn btn-success btn-lg btn-block">Enviar item para a votação</button>
                     </div>
                 </div>
+
+
+                -->
             </div>
             <?= form_close() ?>
         </section>
@@ -126,12 +120,19 @@
         $(document).ready(function() {
             $("#item-customizado").hide();
             $("#customRadio1").click(function() {
-                $("#item-padrao").show("slow");
-                $("#item-customizado").hide("slow");
+                $("#item-customizado").hide(1);
+                $("#item-padrao").show(1);
+                $("#tipo_encam").val("simples");
             });
             $("#customRadio2").click(function() {
-                $("#item-customizado").show("slow");
-                $("#item-padrao").hide("slow");
+                $("#item-customizado").show(1);
+                $("#item-padrao").hide(1);
+                $("#tipo_encam").val("personalizado");
+            });
+            $("#btn-salvar").click( function() {
+                $("#lista-encaminhamentos").append(
+                    "<tr><td><input type='text' name='enc1' value='Abstenção' /></td><td class='actions'><a class='btn btn-danger btn-xs' href='#' data-toggle='modal' data-target='#delete-modal'>Excluir</a></td></tr>"
+                );
             });
         });
     </script>
