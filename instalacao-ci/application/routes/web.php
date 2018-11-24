@@ -32,6 +32,9 @@ Route::group('reunioes', function () {
     Route::get('', 'ReuniaoController@index');
     Route::post('{id}/esta_aberta', 'ReuniaoController@abrirReuniao')->name('abrir_reuniao');
     Route::get('{id}/esta_aberta', 'ReuniaoController@mostraReuniao')->name('mostra_reuniao');
+
+    Route::get('registrar', 'ReuniaoController@registraReuniao')->name('registrar');
+    Route::get('registrar/{1}', 'ReuniaoController@reuniao');
 });
 
-Route::get('{id}/membros/{token}', 'ReuniaoController@resgitraReuniao');
+Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');

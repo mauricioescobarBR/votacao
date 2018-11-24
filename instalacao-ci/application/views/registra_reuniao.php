@@ -75,13 +75,15 @@
 
                 <div class="list-group-item list-group-item-action d-flex
                     justify-content-between align-items-center">
-                    <span><?php echo $reuniao->getDescricao() ?></span>
+                    <span><?php echo $reuniao->getDescricao() ?> <span
+                                class="badge <?php echo $reuniao->getEstaAberta() ? "badge-success" : "badge-secondary"; ?>"><?php echo $reuniao->getEstaAberta() ? "Aberta" : "Fechada"; ?></span></span>
                     <!--<input type="checkbox" id="switch4"/><label class="no-margin" for="switch4"></label>-->
                     <a href="" data-toggle="modal"
-                       onclick="confirm_reuniao_modal('<?php echo route('abrir_reuniao', $reuniao->getId()); ?>','<?php echo $reuniao->getDescricao() ?>', '<?php echo $reuniao->getEstaAberta() ? "fechar" : "abrir"; ?>');"
-                       data-target="#reuniao_modal"
-                       class="btn <?php echo $reuniao->getEstaAberta() ? "btn-outline-success" : "btn-outline-secondary"; ?> btn-reuniao">
-                        <?php echo $reuniao->getEstaAberta() ? "Aberta" : "Fechada"; ?>
+                       onclick="confirm_reuniao_modal('<?php echo route('abrir_reuniao', $reuniao->getId()); ?>','<?php echo $reuniao->getDescricao() ?>', '<?php echo $reuniao->getEstaAberta() ? "entrar" : "abrir"; ?>');"
+                       data-target="#reuniao_modal" <?php echo $reuniao->getEstaAberta() ? "" : "disabled"; ?>
+                       role="button" aria-disabled="<?php echo $reuniao->getEstaAberta() ? "false" : "true"; ?>"
+                       class="btn <?php echo $reuniao->getEstaAberta() ? "btn-outline-success" : "btn-outline-secondary disabled"; ?> btn-reuniao">
+                        Entrar na Reunião
                     </a>
                 </div>
 
@@ -92,7 +94,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title"><span class="is_open"></span> Reunião</h5>
+                        <h5 class="modal-title"><span class="is_open"></span> na Reunião</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

@@ -23,8 +23,7 @@ class ReuniaoController extends CI_Controller
 
     public function index()
     {
-        $repository = $this->pegaRepositoryDeReuniao();
-        $data['reunioes'] = $repository->find_all();
+        $data['reunioes'] = $this->carregaTodas();
 
         $this->load->view("reunioes", $data);
     }
@@ -57,6 +56,19 @@ class ReuniaoController extends CI_Controller
     {
         $credo = new Rougin\Credo\Credo($this->db);
         return $repository = $credo->get_repository('Entity\Reuniao');
+    }
+
+    public function registraReuniao()
+    {
+        $data['reunioes'] = $this->carregaTodas();
+
+        $this->load->view("registra_reuniao", $data);
+    }
+
+    private function carregaTodas()
+    {
+        $repository = $this->pegaRepositoryDeReuniao();
+        return $repository->find_all();
     }
 
 }
