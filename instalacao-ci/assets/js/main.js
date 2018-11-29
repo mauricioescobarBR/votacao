@@ -4,4 +4,14 @@ function confirm_reuniao_modal(url, description, is_open) {
     $("#reuniao_modal .grt").text(description);
     document.getElementById('reuniao_abrir_link').setAttribute("formaction", url);
     document.getElementById('reuniao_abrir_link').focus();
-}
+};
+
+angular
+    .module('app', []);
+
+angular.module('app')
+    .controller('RegistraReuniaoController', function ($http) {
+
+        var vm = this;
+
+    });

@@ -19,7 +19,7 @@
 
     <title>Reuniões</title>
 </head>
-<body class="bg-light">
+<body class="bg-light" ng-controller="RegistraReuniaoController as controller">
 
 <nav class="navbar-grey navbar navbar-expand-lg navbar-dark">
 
@@ -155,6 +155,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/ui-bootstrap4@3.0.5/index.min.js"></script>-->
 <?php echo assets_js('main.js') ?>
 </body>
 </html>

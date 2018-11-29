@@ -37,4 +37,4 @@ Route::group('reunioes', function () {
     Route::get('registrar/{1}', 'ReuniaoController@reuniao');
 });
 
-Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');
+//Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');
