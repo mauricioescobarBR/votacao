@@ -220,9 +220,13 @@ class ItemDePauta
      */
     public function adicionaEncaminhamento(Encaminhamento $encaminhamento)
     {
-       // if (!$this->encaminhamentos->contains($encaminhamento)) {
+        if(!$this->encaminhamentos instanceof ArrayCollection) {
+            $this->encaminhamentos = new ArrayCollection();
+        }
+
+        if (!$this->encaminhamentos->contains($encaminhamento)) {
             $this->encaminhamentos->add($encaminhamento);
-       // }
+        }
 
         return $this;
     }

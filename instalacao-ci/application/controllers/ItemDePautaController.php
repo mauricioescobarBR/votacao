@@ -9,11 +9,7 @@ class ItemDePautaController extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-       // , 'utility'));
-//        , 'secao', 'mensagens'));
 
-        //$this->load->library(array('session', 'form_validation', 'doctrine'));
-        //$this->load->model(array('m_admin', 'm_token', 'm_site'));
         $this->load->library(array('session', 'form_validation', 'unit_test'));
         $this->load->repository('Encaminhamento');
         $this->load->repository('ItensDePauta');
@@ -32,29 +28,13 @@ class ItemDePautaController extends CI_Controller {
 	    $id_ip = $this->input->post("item_pauta_id");
 	    $idp = $this->get_ip($id_ip);
 
-	    $descricoes = array (
-	      1 => "À favor",
-          2 => "Contra",
-          3 => "Abstenção"
-        );
+	    $descricoesjson = $this->input->post("descricoes");
+
+	    $descricoes = json_decode($descricoesjson, true);
 
 	    $this->set_encam($idp, $descricoes);
 
 	    return true;
-
-
-        //$group = new Entity\ItemDePauta;
-        //$this->load->('');
-
-    /*    $dados['idp'] = $this->get_ip($id);
-        if ($dados['idp'] == null)
-        {
-            echo "Não encontrado!";
-            return false;
-        }
-        $this->load->view("encaminhamento", $dados);
-*/
-
 	}
 
 	public function item_pauta($id)
@@ -81,17 +61,15 @@ class ItemDePautaController extends CI_Controller {
     {
         foreach ($descricoes as $descricao)
         {
-            $item_pauta->adicionaEncaminhamento($this->criaEncaminhamento($descricao, $item_pauta));
+            $item_pauta->adicionaEncaminhamento(
+                $this->criaEncaminhamento($descricao, $item_pauta)
+            );
         }
-/*        for ($index = 0; $index < 3; $index++)
-        {
-            $itemSalvo->adicionaEncaminhamento($this->criaEncaminhamento($index, $itemSalvo));
-        }
-*/
-
         $item_pauta = $this->itemDePautaRepository->salvar($item_pauta);
         dump($item_pauta);
     }
+
+
 
     private function criaEncaminhamento($descricao, $item)
     {

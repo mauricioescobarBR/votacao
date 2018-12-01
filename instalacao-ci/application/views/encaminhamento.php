@@ -65,7 +65,7 @@
             <div class="container" id="item-customizado">
                 <div class="row">
                     <div class="input-group col-md-7 col-sm- offset-2 btn-salvarItemCustomizado">
-                        <input class="form-control" type="text" placeholder="Digite a opção de voto">
+                        <input class="form-control" type="text" id="opcaovoto" placeholder="Digite a opção de voto">
                         <button type="button" class="btn btn-success" id="btn-salvar">Salvar</button>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             </thead>
                             <tbody id="lista-encaminhamentos">
                                 <tr>
-                                    <td><input type="text" name="enc1" value="Abstenção" disabled/></td>
+                                    <td class="texto_encam_pers-1">Abstenção</td>
                                     <td class="actions">
                                     </td>
                                 </tr>
@@ -97,6 +97,7 @@
         <section>
             <input type="hidden" name="item_pauta_id" value="<?= $idp->getId() ?>" />
             <input type="text" name="tipo_encam" value="simples" id="tipo_encam"/>
+            <input type="text" name="encam_personalizados" value="" id="encam_personalizados"/>
             <div class="container" id="btn-enviarItem">
                <!--
 
@@ -130,11 +131,28 @@
                 $("#tipo_encam").val("personalizado");
             });
             $("#btn-salvar").click( function() {
-                $("#lista-encaminhamentos").append(
-                    "<tr><td><input type='text' name='enc1' value='Abstenção' /></td><td class='actions'><a class='btn btn-danger btn-xs' href='#' data-toggle='modal' data-target='#delete-modal'>Excluir</a></td></tr>"
-                );
+                if($("#opcaovoto").val() !== ''){
+                    $("#lista-encaminhamentos").append(
+                        adicionaItem(
+                            $("#opcaovoto").val().trim()
+                        )
+                    );
+                    $("#opcaovoto").val('');
+                    updateResultados();
+                }
             });
+
+            function updateResultados(){
+                $("#encam_personalizados").val(
+                   $(".texto_encam_pers").text()
+                );
+            }
+
+            function adicionaItem(texto){
+               return "<tr><td class='texto_encam_pers'>" + texto + " </td><td class='actions'><a class='btn btn-danger btn-xs btn-delete' href='#' onclick='$(this).closest(\"tr\").remove(); $(\"#encam_personalizados\").val( $(\".texto_encam_pers\").text());' data-toggle='modal' data-target='#delete-modal'>Excluir</a></td></tr>";
+            }
         });
+
     </script>
 </body>
 
