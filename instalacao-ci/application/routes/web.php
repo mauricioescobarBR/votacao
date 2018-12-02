@@ -37,4 +37,10 @@ Route::group('reunioes', function () {
     Route::get('registrar/{1}', 'ReuniaoController@reuniao');
 });
 
+Route::group('api', function () {
+    Route::group('reunioes', function () {
+        Route::get('', 'ReuniaoNewController@index');
+    });
+});
+
 //Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');

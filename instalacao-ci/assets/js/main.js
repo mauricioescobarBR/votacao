@@ -6,12 +6,32 @@ function confirm_reuniao_modal(url, description, is_open) {
     document.getElementById('reuniao_abrir_link').focus();
 };
 
-angular
-    .module('app', []);
+(function() {
+    'use strict';
 
-angular.module('app')
-    .controller('RegistraReuniaoController', function ($http) {
+    angular
+        .module('app', [])
+        .controller('RegistraReuniaoController', RegistraReuniaoController);
+
+    RegistraReuniaoController.$inject = ['$http'];
+
+    function RegistraReuniaoController($http) {
 
         var vm = this;
 
-    });
+        vm.reunioes = {};
+
+        getReunioes();
+
+        function getReunioes() {
+            $http.get("http://localhost/votacao/instalacao-ci/api/reunioes/").then(function (data) {
+                vm.reunioes = data;
+
+                console.log(vm.reunioes);
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+
+    }
+})();

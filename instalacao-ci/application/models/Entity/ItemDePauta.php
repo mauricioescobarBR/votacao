@@ -22,7 +22,7 @@ class ItemDePauta
 
 
     /**
- * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
+     * @OneToOne(targetEntity="Votacao", cascade={"persist", "remove", "merge", "refresh"}, orphanRemoval=true)
      */
     private $primeiroTurno;
 
@@ -47,7 +47,6 @@ class ItemDePauta
     private $reuniao;
 
     /**
-     * @Column(nullable=true)
      * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"})
      */
     private $encaminhamentos;

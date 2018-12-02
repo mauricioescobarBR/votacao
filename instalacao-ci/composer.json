@@ -5,7 +5,9 @@
         "luthier/luthier": "^1.0",
         "rougin/credo": "^0.4.0",
         "symfony/var-dumper": "v4.0.14",
-        "tonyhhyip/sse": "^2.1"
+        "tonyhhyip/sse": "^2.1",
+        "symfony/serializer": "^4.2",
+        "symfony/property-access": "^4.2"
     },
     "authors": [
         {

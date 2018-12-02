@@ -46,18 +46,18 @@ class Reuniao
     private $tipoDaReuniao;
 
     /**
-     * @ManyToMany(targetEntity="Entity\Membro", mappedBy="reunioes")
+     * @ManyToMany(targetEntity="Membro", inversedBy="reunioes")
      * @JoinTable(name="membros_reunioes")
      */
     private $membros;
 
     /**
-     * @ManyToOne(targetEntity="Entity\Moderador", inversedBy="reunioes")
+     * @ManyToOne(targetEntity="Moderador", inversedBy="reunioes")
      */
     private $moderador;
 
     /**
-     * @OneToMany(targetEntity="Entity\ItemDePauta", mappedBy="reuniao")
+     * @OneToMany(targetEntity="ItemDePauta", mappedBy="reuniao")
      */
     private $itensDePauta;
 
@@ -107,7 +107,7 @@ class Reuniao
      */
     public function getData()
     {
-        return $this->data;
+        return $this->data->format('d/m/Y');;
     }
 
     /**
@@ -123,7 +123,7 @@ class Reuniao
      */
     public function getHorario()
     {
-        return $this->horario;
+        return $this->horario->format('H:i');
     }
 
     /**
