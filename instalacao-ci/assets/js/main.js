@@ -10,7 +10,7 @@ function confirm_reuniao_modal(url, description, is_open) {
     'use strict';
 
     angular
-        .module('app', [])
+        .module('app', ['btford.socket-io', 'ui.bootstrap', 'angular-spinkit'])
         .controller('RegistraReuniaoController', RegistraReuniaoController);
 
     RegistraReuniaoController.$inject = ['$http'];

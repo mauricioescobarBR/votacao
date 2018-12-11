@@ -41,6 +41,10 @@ class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
         array (
             'Luthier\\' => 8,
         ),
+        'E' => 
+        array (
+            'ElephantIO\\' => 11,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -111,6 +115,11 @@ class ComposerStaticInit9b07ddc168d2d5f20f4175b75033e906
         'Luthier\\' => 
         array (
             0 => __DIR__ . '/..' . '/luthier/luthier/src',
+        ),
+        'ElephantIO\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wisembly/elephant.io/src',
+            1 => __DIR__ . '/..' . '/wisembly/elephant.io/test',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

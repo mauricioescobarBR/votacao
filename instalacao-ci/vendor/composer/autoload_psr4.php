@@ -21,6 +21,7 @@ return array(
     'Rougin\\Credo\\' => array($vendorDir . '/rougin/credo/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Luthier\\' => array($vendorDir . '/luthier/luthier/src'),
+    'ElephantIO\\' => array($vendorDir . '/wisembly/elephant.io/src', $vendorDir . '/wisembly/elephant.io/test'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),

@@ -27,7 +27,7 @@
 body {
     background-color: #e7e9ee !important;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .app-h2 {

@@ -23,43 +23,12 @@
 </head>
 <body class="bg-light" ng-controller="RegistraReuniaoController as controller">
 
-<nav class="navbar-grey navbar navbar-expand-lg navbar-dark">
+<nav class="navbar-grey navbar navbar-expand-lg navbar-dark bottom-30">
 
     <div class="row margin-left">
         <a class="navbar-brand h1 mb-0 logo" href="#">
             <?php echo assets_img('logo.png') ?>
         </a>
-</nav>
-
-<!--Navbar -->
-<nav class="navbar-green navbar navbar-expand-lg navbar-dark bottom-30">
-
-    <div class="row margin-left">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSite">
-
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ADMINISTRATIVO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ACADÊMICO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SISTEMA</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
 </nav>
 
 <!--Lista de reuniões-->
@@ -71,7 +40,9 @@
             Clique no botão para abrir uma reunião para os membros poderem se registrar.</p>
     </div>
 
-    <form id="form_reuniao">
+    <pulse-spinner></pulse-spinner>
+
+    <form id="form_reuniao" style="display: none">
         <div class="list-group">
             <?php foreach ($reunioes as $reuniao): ?>
 
@@ -92,7 +63,7 @@
             <?php endforeach; ?>
         </div>
 
-        <div id="reuniao_modal" class="modal fade" tabindex="-1" role="dialog">
+        <div id="reuniao_modal" class="modal fade bottom-30" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -116,12 +87,6 @@
         </div>
     </form>
 
-</div>
-
-<div class="row">
-    <div>
-        <hr>
-    </div>
 </div>
 
 <!--Rodapé-->
@@ -157,9 +122,13 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/angular-spinkit@0.3.4/build/angular-spinkit.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/ui-bootstrap4@3.0.5/index.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/ui-bootstrap4@3.0.5/dist/ui-bootstrap-3.0.5.min.js"></script>
+
+<?php echo assets_js('angular-socket-io-master/socket.min.js') ?>
 <?php echo assets_js('main.js') ?>
 </body>
 </html>
