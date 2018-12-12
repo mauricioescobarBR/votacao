@@ -28,7 +28,8 @@ class Encaminhamento
     private $somaVoto = 0;
 
     /**
-     * @ManyToOne(targetEntity="Entity\ItemDePauta", inversedBy="encaminhamentos")
+     * @ManyToOne(targetEntity="ItemDePauta", inversedBy="encaminhamentos")
+     * @JoinColumn(name="itens_de_pauta_id", referencedColumnName="id")
      */
     private $itemDePauta;
 

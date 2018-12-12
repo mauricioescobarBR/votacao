@@ -1,0 +1,16 @@
+{
+  "name": "rpvi",
+  "version": "0.0.1",
+  "description": "This is a simple [CodeIgniter](http://codeigniter.com/) installation with [Doctrine 2](http://www.doctrine-project.org/). It contains sample models in `application/models/Entity` and usage examples in `application/controllers/welcome.php`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "winston": "2.*"
+  }
+}

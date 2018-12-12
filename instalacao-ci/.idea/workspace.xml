@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ad9470a-4a12-48af-84a4-def84f61d34b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/models/Entity/Encaminhamento.php" afterPath="$PROJECT_DIR$/application/models/Entity/Encaminhamento.php" />
+      <change beforePath="$PROJECT_DIR$/application/models/Entity/ItemDePauta.php" afterPath="$PROJECT_DIR$/application/models/Entity/ItemDePauta.php" />
+      <change beforePath="$PROJECT_DIR$/application/models/Entity/Reuniao.php" afterPath="$PROJECT_DIR$/application/models/Entity/Reuniao.php" />
+      <change beforePath="$PROJECT_DIR$/application/routes/web.php" afterPath="$PROJECT_DIR$/application/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/registra_reuniao.php" afterPath="$PROJECT_DIR$/application/views/registra_reuniao.php" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/.gitignore" afterPath="$PROJECT_DIR$/vendor/psr/log/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/LICENSE" afterPath="$PROJECT_DIR$/vendor/psr/log/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/AbstractLogger.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/AbstractLogger.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/InvalidArgumentException.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/InvalidArgumentException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LogLevel.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LogLevel.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareTrait.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareTrait.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/README.md" afterPath="$PROJECT_DIR$/vendor/psr/log/README.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/composer.json" afterPath="$PROJECT_DIR$/vendor/psr/log/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/.gitignore" afterPath="$PROJECT_DIR$/vendor/symfony/console/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/HelpCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/HelpCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/ListCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/ListCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/ConsoleEvents.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/ConsoleEvents.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/ApplicationDescription.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/ApplicationDescription.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/Descriptor.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/Descriptor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/DescriptorInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/DescriptorInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/JsonDescriptor.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/JsonDescriptor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/MarkdownDescriptor.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/MarkdownDescriptor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/TextDescriptor.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/TextDescriptor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/XmlDescriptor.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/XmlDescriptor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleCommandEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleCommandEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleExceptionEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleExceptionEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleTerminateEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleTerminateEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/CommandNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/CommandNotFoundException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/ExceptionInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/ExceptionInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/InvalidArgumentException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/InvalidArgumentException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/InvalidOptionException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/InvalidOptionException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/LogicException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/LogicException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/RuntimeException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/RuntimeException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatter.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyle.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyle.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyleInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyleInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/DebugFormatterHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/DebugFormatterHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/DescriptorHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/DescriptorHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/DialogHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/DialogHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/FormatterHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/FormatterHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/Helper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/Helper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperSet.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperSet.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/InputAwareHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/InputAwareHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProcessHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProcessHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressIndicator.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressIndicator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/Table.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/Table.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableCell.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableCell.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableSeparator.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableSeparator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableStyle.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableStyle.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/Input.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/Input.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputArgument.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputArgument.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputAwareInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputAwareInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputDefinition.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputDefinition.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputOption.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputOption.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/StringInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/StringInput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Logger/ConsoleLogger.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Logger/ConsoleLogger.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/BufferedOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/BufferedOutput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutputInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutputInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/NullOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/NullOutput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/Output.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/Output.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/OutputInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/OutputInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/StreamOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/StreamOutput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/ConfirmationQuestion.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/ConfirmationQuestion.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/Question.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/Question.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/README.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/README.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Shell.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Shell.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Style/OutputStyle.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Style/OutputStyle.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Style/StyleInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Style/StyleInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tester/CommandTester.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tester/CommandTester.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/CommandTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/CommandTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/HelpCommandTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/HelpCommandTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/ListCommandTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/ListCommandTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/AbstractDescriptorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/AbstractDescriptorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/JsonDescriptorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/JsonDescriptorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/MarkdownDescriptorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/MarkdownDescriptorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/ObjectsProvider.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/ObjectsProvider.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/TextDescriptorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/TextDescriptorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/XmlDescriptorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/XmlDescriptorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/BarBucCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/BarBucCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication1.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication1.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication2.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication2.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplicationMbString.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplicationMbString.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand1.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand1.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand2.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand2.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommandMbString.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommandMbString.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DummyOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DummyOutput.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo1Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo1Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo2Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo2Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo3Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo3Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo4Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo4Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo5Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo5Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo6Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo6Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooOptCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooOptCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced1Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced1Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced2Command.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced2Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FoobarCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FoobarCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_0.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_0.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_1.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_1.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_10.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_10.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_12.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_12.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_13.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_13.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_14.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_14.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_15.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_15.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_16.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_16.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_17.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_17.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_2.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_2.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_3.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_3.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_4.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_4.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_5.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_5.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_6.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_6.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_7.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_7.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_8.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_8.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_9.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_9.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_0.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_0.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_10.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_10.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_12.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_12.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_13.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_13.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_14.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_14.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_15.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_15.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_16.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_16.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_17.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_17.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_5.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_5.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_6.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_6.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_7.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_7.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_8.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_8.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_9.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_9.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestTiti.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestTiti.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestToto.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestToto.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_astext1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_astext1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_astext2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_astext2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_asxml1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_asxml1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_asxml2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_asxml2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3decorated.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3decorated.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_astext.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_astext.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_asxml.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_asxml.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/definition_astext.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/definition_astext.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/definition_asxml.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/definition_asxml.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.xml" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleStackTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleStackTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/FormatterHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/FormatterHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperSetTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperSetTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyDialogHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyDialogHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyProgressHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyProgressHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyTableHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/LegacyTableHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProcessHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProcessHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressBarTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressBarTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressIndicatorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressIndicatorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/SymfonyQuestionHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/SymfonyQuestionHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableStyleTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableStyleTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArgvInputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArgvInputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArrayInputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArrayInputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputArgumentTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputArgumentTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputDefinitionTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputDefinitionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputOptionTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputOptionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/StringInputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/StringInputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Logger/ConsoleLoggerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Logger/ConsoleLoggerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/ConsoleOutputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/ConsoleOutputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/NullOutputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/NullOutputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/OutputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/OutputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/StreamOutputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/StreamOutputTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Style/SymfonyStyleTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Style/SymfonyStyleTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/ApplicationTesterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/ApplicationTesterTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/CommandTesterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/CommandTesterTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/symfony/console/phpunit.xml.dist" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/.gitignore" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/AcceptHeader.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/AcceptHeader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/AcceptHeaderItem.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/AcceptHeaderItem.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ApacheRequest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ApacheRequest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/RequestExceptionInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/RequestExceptionInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ExpressionRequestMatcher.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ExpressionRequestMatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/AccessDeniedException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/AccessDeniedException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/CannotWriteFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/CannotWriteFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/ExtensionFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/ExtensionFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FileNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FileNotFoundException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FormSizeFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/FormSizeFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/IniSizeFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/IniSizeFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/NoFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/NoFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/NoTmpDirFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/NoTmpDirFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/PartialFileException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/PartialFileException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/UnexpectedTypeException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/UnexpectedTypeException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/UploadException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Exception/UploadException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/File.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/File.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/ExtensionGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/ExtensionGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/ExtensionGuesserInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/ExtensionGuesserInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/FileBinaryMimeTypeGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/FileBinaryMimeTypeGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/FileinfoMimeTypeGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/FileinfoMimeTypeGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeGuesserInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeGuesserInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Stream.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/Stream.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/FileBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/FileBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderUtils.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderUtils.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/IpUtils.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/IpUtils.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/JsonResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/JsonResponse.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/README.md" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/README.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/RedirectResponse.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcherInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcherInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestStack.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/RequestStack.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ResponseHeaderBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ResponseHeaderBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ServerBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ServerBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/NamespacedAttributeBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/NamespacedAttributeBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Session.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Session.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagProxy.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagProxy.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/AbstractSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/AbstractSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MigratingSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MigratingSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeFileSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeFileSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockArraySessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockArraySessionStorage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/AbstractProxy.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/AbstractProxy.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedResponse.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/AcceptHeaderItemTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/AcceptHeaderItemTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/AcceptHeaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/AcceptHeaderTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ApacheRequestTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ApacheRequestTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/CookieTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/CookieTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ExpressionRequestMatcherTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ExpressionRequestMatcherTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FakeFile.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FakeFile.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FileTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FileTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/MimeType/MimeTypeTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/MimeType/MimeTypeTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/FileBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/FileBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/common.inc" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/common.inc" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_max_age.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_max_age.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_max_age.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_max_age.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_raw_urlencode.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_raw_urlencode.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_raw_urlencode.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_raw_urlencode.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_lax.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_lax.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_lax.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_lax.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_strict.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_strict.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_strict.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_samesite_strict.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_urlencode.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_urlencode.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_urlencode.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/cookie_urlencode.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/invalid_cookie_name.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/invalid_cookie_name.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/invalid_cookie_name.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/invalid_cookie_name.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/HeaderBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/HeaderBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/HeaderUtilsTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/HeaderUtilsTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/IpUtilsTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/IpUtilsTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/JsonResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/JsonResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RedirectResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RedirectResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestMatcherTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestMatcherTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestStackTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestStackTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseFunctionalTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseFunctionalTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseHeaderBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseHeaderBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTestCase.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ServerBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ServerBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Attribute/AttributeBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Attribute/AttributeBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Attribute/NamespacedAttributeBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Attribute/NamespacedAttributeBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Flash/AutoExpireFlashBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Flash/AutoExpireFlashBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Flash/FlashBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Flash/FlashBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/SessionTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/SessionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/common.inc" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/common.inc" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/empty_destroys.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/empty_destroys.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/empty_destroys.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/empty_destroys.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/read_only.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/read_only.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/read_only.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/read_only.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/regenerate.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/regenerate.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/regenerate.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/regenerate.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/storage.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/storage.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/storage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/storage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie_and_session.expected" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie_and_session.expected" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie_and_session.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/Fixtures/with_cookie_and_session.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MemcachedSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MemcachedSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MigratingSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MigratingSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MongoDbSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MongoDbSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NativeFileSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NativeFileSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NullSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NullSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisArraySessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisArraySessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisClusterSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisClusterSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/StrictSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/StrictSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MetadataBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MetadataBagTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MockArraySessionStorageTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MockArraySessionStorageTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MockFileSessionStorageTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/MockFileSessionStorageTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/NativeSessionStorageTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/NativeSessionStorageTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/PhpBridgeSessionStorageTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/PhpBridgeSessionStorageTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Proxy/AbstractProxyTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Proxy/AbstractProxyTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Proxy/SessionHandlerProxyTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Proxy/SessionHandlerProxyTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/StreamedResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/StreamedResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/schema/http-status-codes.rng" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/schema/http-status-codes.rng" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/schema/iana-registry.rng" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/schema/iana-registry.rng" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/phpunit.xml.dist" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1999981258">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+          <entry key="json" value="3" />
+          <entry key="php" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="238" />
+          <entry key="json" value="5" />
+          <entry key="php" value="1190" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="238" />
+          <entry key="PHP" value="1190" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.class">
+        <counts>
+          <entry key="PHP Class.type" value="1" />
+          <entry key="PHP Trait.type" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Reuniao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Entity/Reuniao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2500">
+              <caret line="125" column="42" lean-forward="false" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registra_reuniao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/registra_reuniao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Membro.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Entity/Membro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReuniaoNewController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoNewController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setsta</find>
+      <find>setti</find>
+      <find>setstat</find>
+      <find>parecer</find>
+      <find>stat</find>
+      <find>resultado</find>
+      <find>cascade</find>
+      <find>COMPOSER_AUTO</find>
+      <find>votacaoAberta</find>
+      <find>entity</find>
+      <find>entit</find>
+      <find>$membros</find>
+      <find>credo</find>
+      <find>helper</find>
+      <find>url</find>
+      <find>hidden</find>
+      <find>reuni</find>
+      <find>conteu</find>
+      <find>estaaberta</find>
+      <find>is_reconnect</find>
+      <find>StreamedResponse</find>
+      <find>mostra</find>
+      <find>abrir_reuniao</find>
+      <find>tem certe</find>
+      <find>tem certeza</find>
+      <find>toArray</find>
+      <find>circular</find>
+      <find>Cir</find>
+      <find>gethor</find>
+      <find>overfl</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/models/Secretario.php" />
+        <option value="$PROJECT_DIR$/application/models/Urna.php" />
+        <option value="$PROJECT_DIR$/application/models/ResultadosDoEncaminhamento.php" />
+        <option value="$PROJECT_DIR$/application/models/Encaminhamento.php" />
+        <option value="$PROJECT_DIR$/application/models/Moderador.php" />
+        <option value="$PROJECT_DIR$/application/models/StatusVotacao.php" />
+        <option value="$PROJECT_DIR$/application/models/TipoDaReuniao.php" />
+        <option value="$PROJECT_DIR$/application/models/Turno.php" />
+        <option value="$PROJECT_DIR$/application/models/Votacao.php" />
+        <option value="$PROJECT_DIR$/application/models/Membro.php" />
+        <option value="$PROJECT_DIR$/application/models/Reuniao.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/TipoDaReuniao.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Turno.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/StatusVotacao.php" />
+        <option value="$PROJECT_DIR$/application/repositories/Abstract_repository.php" />
+        <option value="$PROJECT_DIR$/application/views/US04.php" />
+        <option value="$PROJECT_DIR$/application/repositories/BaseRepository.php" />
+        <option value="$PROJECT_DIR$/application/repositories/AbstractRepository.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/config/assets.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Doctrine.php" />
+        <option value="$PROJECT_DIR$/application/repositories/Reunioes_repository.php" />
+        <option value="$PROJECT_DIR$/application/routes/api.php" />
+        <option value="$PROJECT_DIR$/application/controllers/TimeEvent.php" />
+        <option value="$PROJECT_DIR$/application/controllers/dump.html" />
+        <option value="$PROJECT_DIR$/application/controllers/EncaminhamentoEvent.php" />
+        <option value="$PROJECT_DIR$/application/controllers/ReuniaoSSEResource.php" />
+        <option value="$PROJECT_DIR$/application/views/registro_reuniao.php" />
+        <option value="$PROJECT_DIR$/application/views/reunioes.php" />
+        <option value="$PROJECT_DIR$/application/controllers/ReuniaoController.php" />
+        <option value="$PROJECT_DIR$/application/routes/web.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/application/models/Entity/ArrayExpressible.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Moderador.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/ResultadoDaVotacao.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/ResultadosDoEncaminhamento.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Membro.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Voto.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Votacao.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Urna.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Secretario.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Encaminhamento.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/ItemDePauta.php" />
+        <option value="$PROJECT_DIR$/application/controllers/ReuniaoNewController.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Reuniao.php" />
+        <option value="$PROJECT_DIR$/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/application/views/registra_reuniao.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/vendor/tonyhhyip/sse/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/rougin/spark-plug" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/luthier/luthier" />
+      <path value="$PROJECT_DIR$/vendor/rougin/codeigniter" />
+      <path value="$PROJECT_DIR$/vendor/rougin/credo" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/tonyhhyip/sse" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/wisembly/elephant.io" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="932" />
+    <option name="width" value="441" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="instalacao-ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="instalacao-ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="instalacao-ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="instalacao-ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="instalacao-ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="instalacao-ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="instalacao-ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="instalacao-ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\assets\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\application\views" />
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\assets\js" />
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\application\models\Entity" />
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\application\models" />
+      <recent name="C:\xampp\htdocs\votacao\instalacao-ci\application\repositories" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ad9470a-4a12-48af-84a4-def84f61d34b" name="Default" comment="" />
+      <created>1540156610620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540156610620</updated>
+      <workItem from="1540156613127" duration="1082000" />
+      <workItem from="1540480001351" duration="5792000" />
+      <workItem from="1541274031807" duration="109000" />
+      <workItem from="1542395197810" duration="6558000" />
+      <workItem from="1542721182842" duration="609000" />
+      <workItem from="1542907850610" duration="1530000" />
+      <workItem from="1542919673963" duration="7451000" />
+      <workItem from="1543497840304" duration="4553000" />
+      <workItem from="1543526636762" duration="22564000" />
+      <workItem from="1543883777874" duration="1811000" />
+      <workItem from="1544124247912" duration="6567000" />
+      <workItem from="1544452053985" duration="2208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="151151000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17935579" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/UserGroup.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="71" column="112" lean-forward="true" selection-start-line="71" selection-start-column="112" selection-end-line="71" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/MY_Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="822" column="55" lean-forward="false" selection-start-line="822" selection-start-column="50" selection-end-line="822" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/StatusVotacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/TipoDaReuniao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/assets_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="102" column="11" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="91" column="34" lean-forward="false" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/styles.css" />
+    <entry file="file://$PROJECT_DIR$/application/doctrine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/Doctrine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rougin/credo/src/EntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/functions/dump.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/repositories/AbstractRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="278" column="23" lean-forward="false" selection-start-line="278" selection-start-column="23" selection-end-line="278" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/repositories/Reunioes_repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061">
+          <caret line="92" column="10" lean-forward="false" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tonyhhyip/sse/src/SSE.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tonyhhyip/sse/src/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/EncaminhamentoEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoSSEResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/reunioes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="44" column="41" lean-forward="false" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Turno.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/indaxia/doctrine-orm-transformations/src/Traits/Transformable.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Moderador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/ResultadoDaVotacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/ResultadosDoEncaminhamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Voto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Votacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Urna.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Secretario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/ArrayExpressible.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Encaminhamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/ItemDePauta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="49" column="103" lean-forward="false" selection-start-line="49" selection-start-column="103" selection-end-line="49" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Membro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/serializer/Serializer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/serializer/Normalizer/ObjectNormalizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/serializer/Normalizer/AbstractNormalizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="119" column="20" lean-forward="false" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoNewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Reuniao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2500">
+          <caret line="125" column="42" lean-forward="false" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/registra_reuniao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

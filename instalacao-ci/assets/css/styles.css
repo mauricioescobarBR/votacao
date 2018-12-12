@@ -27,6 +27,7 @@
 body {
     background-color: #e7e9ee !important;
     font-family: 'Open Sans', sans-serif;
+    /*overflow: hidden;*/
 }
 
 .app-h2 {
@@ -46,12 +47,27 @@ body {
     margin-bottom: 30px !important;
 }
 
+.no-margin {
+    margin: 0!important;
+}
+
 /*CSS do container*/
 #contents {
     padding: 20px;
     border-radius: 0px;
     border: 1px solid #ddd;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Botões*/
+.btn-reuniao {
+    border-radius: 40px;
+    min-width: 100px;
+}
+
+/*Modal*/
+.modal-title::first-letter {
+    text-transform: uppercase;
 }
 
 /*Lists*/
