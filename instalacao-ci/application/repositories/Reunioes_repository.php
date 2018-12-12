@@ -19,4 +19,11 @@ class Reunioes_repository extends EntityRepository implements Reunioes
         }
     }
 
+
+    public function save($entity)
+    {
+        $this->getEntityManager()->persist($entity);
+        $this->getEntityManager()->flush();
+        return $entity;
+    }
 }

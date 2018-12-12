@@ -32,6 +32,10 @@ Route::set('translate_uri_dashes', FALSE);
 
 Route::get('reunioes', 'ReuniaoController@index');
 
+Route::get('reuniao/{id}', 'ReuniaoController@reuniao');
+
+Route::post('set_status_reuniao', 'ReuniaoController@set_status_reuniao');
+
 Route::get('item_de_pauta/{id}', 'ItemDePautaController@item_pauta');
 
 Route::post('set_encaminhamentos', 'ItemDePautaController@set_encaminhamentos');
