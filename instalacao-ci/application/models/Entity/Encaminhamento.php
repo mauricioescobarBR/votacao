@@ -29,7 +29,7 @@ class Encaminhamento
 
     /**
      * @ManyToOne(targetEntity="ItemDePauta", inversedBy="encaminhamentos")
-     * @JoinColumn(name="itens_de_pauta_id", referencedColumnName="id")
+     * @JoinColumn(name="item_de_pauta_id", referencedColumnName="id")
      */
     private $itemDePauta;
 

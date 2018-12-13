@@ -99,10 +99,6 @@ function confirm_reuniao_modal(url, description, is_open) {
         }
 
         function envia() {
-            var data = {
-                data: vm.data
-            }
-
             vm.data = {
                 itemId: vm.itemId,
                 encaminhamentos: vm.itensDeVoto
@@ -113,7 +109,7 @@ function confirm_reuniao_modal(url, description, is_open) {
             $http({
                 url: 'http://localhost/votacao/instalacao-ci/index.php/set_encaminhamentos',
                 method: "POST",
-                data: {'data': data}
+                data: {'data': vm.data}
             })
                 .then(function (response) {
                         console.log(response);

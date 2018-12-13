@@ -31,9 +31,20 @@ class ItemDePautaController extends CI_Controller
         header('Content-Type: application/json');
 
         $data = $this->input->raw_input_stream;
-//        $data = json_decode($data);
+        $data = json_decode($data);
 
-        echo $data;
+        $itemDePauta = $this->get_ip($data->data->itemId);
+
+        $length = count($data->data->encaminhamentos);
+        for ($index = 0; $index < $length; $index++) {
+            $itemDePauta->adicionaEncaminhamento($this->criaEncaminhamento($data->data->encaminhamentos[$index]->descricao, $itemDePauta));
+        }
+
+        $itemDePauta = $this->itemDePautaRepository->salvar($itemDePauta);
+
+        echo $itemDePauta;
+//
+//        echo $data;
 
 //	    $id_ip = $this->input->post("item_pauta_id");
 //	    $idp = $this->get_ip($id_ip);
