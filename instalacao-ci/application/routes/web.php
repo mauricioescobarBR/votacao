@@ -47,9 +47,7 @@ Route::get('votacao', function () {
     ci()->load->view('votacao');
 });
 
-Route::get('encaminhar', function () {
-    ci()->load->view('encaminhar');
-});
+Route::get('encaminhar/{1}', 'ItemDePautaController@item_pauta')->name('item_pauta');
 
 Route::post('encaminha', 'ItemDePautaController@envia')->name('encaminha');
 

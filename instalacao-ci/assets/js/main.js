@@ -56,11 +56,14 @@ function confirm_reuniao_modal(url, description, is_open) {
 
     }
 
-    EncaminhamentoController.$inject = ['$scope', 'http'];
+    EncaminhamentoController.$inject = ['$scope', '$http', '$location'];
 
-    function EncaminhamentoController($scope, http) {
+    function EncaminhamentoController($scope, $http, $location) {
 
         var vm = this;
+
+        vm.itemId = $location.absUrl().split(/[\s/]+/).pop();
+        console.log(vm.itemId);
 
         vm.itemDeVoto = {
             id: '',
@@ -68,14 +71,20 @@ function confirm_reuniao_modal(url, description, is_open) {
         };
         vm.itensDeVoto = [];
 
+        vm.data = {
+            itemId: vm.itemId,
+            encaminhamentos: vm.itensDeVoto
+        }
+
         vm.opcao = "";
 
         vm.adicionaItem = adicionaItem;
         vm.remove = remove;
+        vm.envia = envia;
 
         function adicionaItem() {
             if (vm.itemDeVoto.descricao != "") {
-                vm.itensDeVoto.push(vm.itemDevoto);
+                vm.itensDeVoto.push(vm.itemDeVoto);
 
                 vm.itemDeVoto = {
                     id: "",
@@ -89,7 +98,32 @@ function confirm_reuniao_modal(url, description, is_open) {
             vm.itensDeVoto.splice(index, 1);
         }
 
-        $scope.$watch('vm.itemDeVoto', function(current, original) {
+        function envia() {
+            var data = {
+                data: vm.data
+            }
+
+            vm.data = {
+                itemId: vm.itemId,
+                encaminhamentos: vm.itensDeVoto
+            }
+
+            console.log(vm.data);
+
+            $http({
+                url: 'http://localhost/votacao/instalacao-ci/index.php/set_encaminhamentos',
+                method: "POST",
+                data: {'data': data}
+            })
+                .then(function (response) {
+                        console.log(response);
+                    },
+                    function (response) { // optional
+                        console.log(response);
+                    });
+        }
+
+        $scope.$watch('vm.itemDeVoto', function (current, original) {
             console.log(current);
             console.log(original)
         });

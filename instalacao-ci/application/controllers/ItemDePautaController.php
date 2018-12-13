@@ -1,13 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ItemDePautaController extends CI_Controller {
+class ItemDePautaController extends CI_Controller
+{
 
     private $credo;
     private $encaminhamentoRepository;
     private $itemDePautaRepository;
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
 
         $this->load->library(array('session', 'form_validation', 'unit_test'));
@@ -24,31 +26,38 @@ class ItemDePautaController extends CI_Controller {
      * como parâmetro.
      * @param $id
      */
-	public function set_encaminhamentos(){
-	    $id_ip = $this->input->post("item_pauta_id");
-	    $idp = $this->get_ip($id_ip);
-
-	    $descricoesjson = $this->input->post("descricoes");
-
-	    $descricoes = json_decode($descricoesjson, true);
-
-	    $this->set_encam($idp, $descricoes);
-
-	    return true;
-	}
-
-	public function item_pauta($id)
+    public function set_encaminhamentos()
     {
-        $dados['idp'] = $this->get_ip($id);
-        if ($dados['idp'] == null)
-        {
+        header('Content-Type: application/json');
+
+        $data = $this->input->raw_input_stream;
+//        $data = json_decode($data);
+
+        echo $data;
+
+//	    $id_ip = $this->input->post("item_pauta_id");
+//	    $idp = $this->get_ip($id_ip);
+//
+//	    $descricoesjson = $this->input->post("descricoes");
+//
+//	    $descricoes = json_decode($descricoesjson, true);
+//
+//	    $this->set_encam($idp, $descricoes);
+//
+//	    return true;
+    }
+
+    public function item_pauta($id)
+    {
+        $dados['item'] = $this->get_ip($id);
+        if ($dados['item'] == null) {
             echo "Não encontrado!";
             return false;
         }
-        return $this->load->view("encaminhamento", $dados);
+        return $this->load->view("encaminhar", $dados);
     }
 
-	private function get_ip($id)
+    private function get_ip($id)
     {
         return $this->itemDePautaRepository->find($id);
     }
@@ -59,8 +68,7 @@ class ItemDePautaController extends CI_Controller {
      */
     private function set_encam($item_pauta, $descricoes)
     {
-        foreach ($descricoes as $descricao)
-        {
+        foreach ($descricoes as $descricao) {
             $item_pauta->adicionaEncaminhamento(
                 $this->criaEncaminhamento($descricao, $item_pauta)
             );
@@ -90,8 +98,7 @@ class ItemDePautaController extends CI_Controller {
 
         $itemSalvo = $this->itemDePautaRepository->salvar($IDP);
 
-        for ($index = 0; $index < 3; $index++)
-        {
+        for ($index = 0; $index < 3; $index++) {
             $itemSalvo->adicionaEncaminhamento($this->criaEncaminhamento($index, $itemSalvo));
         }
 

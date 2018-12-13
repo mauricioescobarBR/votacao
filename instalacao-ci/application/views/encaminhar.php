@@ -24,12 +24,42 @@
     <title>Disponibilizar Item de Pauta</title>
 </head>
 <body ng-controller="EncaminhamentoController as vm">
-<nav class="navbar-grey navbar navbar-expand-lg navbar-dark bottom-30">
+<nav class="navbar-grey navbar navbar-expand-lg navbar-dark">
 
     <div class="row margin-left">
         <a class="navbar-brand h1 mb-0 logo" href="#">
             <?php echo assets_img('logo.png') ?>
         </a>
+</nav>
+<!--Navbar -->
+<nav class="navbar-green navbar navbar-expand-lg navbar-dark bottom-30">
+
+    <div class="row margin-left">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ADMINISTRATIVO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACADÊMICO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SISTEMA</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
 </nav>
 
 <div class="container">
@@ -64,8 +94,8 @@
                                         <div class="col-md-12">
                                             <ul>
                                                 <li>
-                                                    <p class="app-label-description bottom-30">Fugit velit esse ut in
-                                                        quia sunt fugit minima quibusdam ab ut et tenetur occaecati.
+                                                    <p class="app-label-description bottom-30">
+                                                        <?php echo $item->getDescricao() ?>
                                                     </p>
                                                 </li>
                                             </ul>
@@ -77,7 +107,7 @@
                                         <div class="col-md-12">
                                             <ul>
                                                 <li>
-                                                    <p class="app-label-description bottom-30">Miss Aniya Wiegand
+                                                    <p class="app-label-description bottom-30"><?php echo $item->getRelator() ?>
                                                     </p>
                                                 </li>
                                             </ul>
@@ -169,7 +199,8 @@
                                             <button type="button"
                                                     class="btn btn-success button1 bottom-30"
                                                     onclick="$('.modalConfirmaEncaminhamento').modal()"
-                                                    onclick="$('.modalConfirmaEncaminhamento').modal()">Enviar para
+                                                    onclick="$('.modalConfirmaEncaminhamento').modal()"
+                                                    ng-click="vm.envia()">Enviar para
                                                 Votação
                                             </button>
                                         </div>
