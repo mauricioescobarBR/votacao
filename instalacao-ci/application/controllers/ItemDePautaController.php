@@ -69,8 +69,6 @@ class ItemDePautaController extends CI_Controller {
         dump($item_pauta);
     }
 
-
-
     private function criaEncaminhamento($descricao, $item)
     {
         $encaminhamento = new Entity\Encaminhamento();
@@ -102,4 +100,52 @@ class ItemDePautaController extends CI_Controller {
         dump($itemSalvo);
         return $itemSalvo;
     }
+
+    public function encaminharItem(\Entity\ItemDePauta $itemDePauta)
+    {
+        $version = new \ElephantIO\Engine\SocketIO\Version1X("http://localhost:3001");
+
+        $client = new \ElephantIO\Client($version);
+        $client->initialize();
+        $client->emit($this->serializaItem($itemDePauta));
+        $client->close();
+    }
+
+    private function serializaItem(\Entity\ItemDePauta $itemDePauta)
+    {
+        $normalizer = new \Symfony\Component\Serializer\Normalizer\ObjectNormalizer();
+        $normalizer->setCircularReferenceLimit(1);
+        $normalizer->setIgnoredAttributes(array("primeiroTurno", "segundoTurno", "reuniao", "temSegundoTurno"));
+        $normalizer->setCircularReferenceHandler(function ($object) {
+            return $object->getId();
+        });
+
+        $encoders = array(new \Symfony\Component\Serializer\Encoder\JsonEncoder());
+
+        $normalizers = array($normalizer);
+
+        $serializer = new \Symfony\Component\Serializer\Serializer($normalizers, $encoders);
+
+        $jsonContent = $serializer->serialize($itemDePauta, 'json');
+
+        return $jsonContent;
+    }
+
+    public function envia()
+    {
+        $data = [
+            "nome" => $this->input->post('nome'),
+            "descricao" => $this->input->post('descricao'),
+        ];
+
+        $version = new \ElephantIO\Engine\SocketIO\Version2X("http://localhost:3001");
+
+        $client = new \ElephantIO\Client($version);
+        $client->initialize();
+        $client->emit('encaminhamento', $data);
+        $client->close();
+
+        redirect('/encaminhar');
+    }
+
 }

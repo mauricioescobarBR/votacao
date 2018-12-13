@@ -43,6 +43,16 @@ Route::group('api', function () {
     });
 });
 
+Route::get('votacao', function () {
+    ci()->load->view('votacao');
+});
+
+Route::get('encaminhar', function () {
+    ci()->load->view('encaminhar');
+});
+
+Route::post('encaminha', 'ItemDePautaController@envia')->name('encaminha');
+
 //Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');
 Route::get('item_de_pauta/{id}', 'ItemDePautaController@item_pauta');
 
