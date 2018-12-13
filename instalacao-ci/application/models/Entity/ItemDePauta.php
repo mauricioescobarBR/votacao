@@ -47,7 +47,7 @@ class ItemDePauta
     private $reuniao;
 
     /**
-     * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"})
+     * @OneToMany(targetEntity="Encaminhamento", mappedBy="itemDePauta", cascade={"persist", "remove"}, orphanRemoval=true)
      */
     private $encaminhamentos;
 

@@ -16,56 +16,84 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-spinkit@0.3.4/build/angular-spinkit.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+
     <!-- Custom CSS -->
     <?php echo assets_css('styles.css') ?>
 
-    <title>Reuniões</title>
+    <title>Disponibilizar Item de Pauta</title>
 </head>
-<body class="bg-light" ng-controller="VotarItemDePautaController as controller">
-
-<nav class="navbar-grey navbar navbar-expand-lg navbar-dark bottom-30">
+<body ng-controller="VotarItemDePautaController as vm">
+<nav class="navbar-grey navbar navbar-expand-lg navbar-dark">
 
     <div class="row margin-left">
         <a class="navbar-brand h1 mb-0 logo" href="#">
             <?php echo assets_img('logo.png') ?>
         </a>
 </nav>
+<!--Navbar -->
+<nav class="navbar-green navbar navbar-expand-lg navbar-dark bottom-30">
 
-<!--Lista de reuniões-->
-<div class="container bg-white" id="contents">
+    <div class="row margin-left">
 
-    <div class="bottom-30">
-        <h2 id="titulo" class="text-center font-weight-bold text-secondary app-h2">Reuniões</h2>
-        <p id="descricao" class="text-center font-weight-bold text-secondary app-h2-description">
-            Clique no botão para abrir uma reunião para os membros poderem se registrar.</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ADMINISTRATIVO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACADÊMICO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SISTEMA</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
 
-    <form id="form_reuniao" method="post" action="<?php route('encaminha') ?>">
+</nav>
 
-    </form>
+<div class="container">
 
-</div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
 
-<!--Rodapé-->
-<div id="footer" class="container text-center">
-    <a href="javascript:abrirDialog('ptl/sistema/centralDeAjuda',
-                                        'dialog_modal_padrao', '500', '540',
-                                        'Central de Ajuda',
-                                        '',
-                                        'dialog_modal_padrao')" class="text-success">
-        <img src="https://guri.unipampa.edu.br/public/themes/moder//imgs/help_verde.png" alt="Central de Ajuda">
-        Central de Ajuda</a> <br><br>
-    Desenvolvido:
-    <a href="http://www.dtic.unipampa.edu.br" target="_new" class="text-success">DTIC</a> -
-    <a href="http://www.unipampa.edu.br" target="_new" class="text-success">Universidade Federal do Pampa</a> <br>
+            <div class="panel-group">
+                <div class="app-panel panel panel-default">
+                    <div class="panel-collapse collapse in">
+                        <div class="panel-body">
 
+                            <form id="form" name="form" method="post">
+                                <div class="col-md-10 col-sm-10 col-10 offset-md-1 offset-sm-1 offset-1">
 
-    <p class="center">
-        <a href="http://validator.w3.org/check?uri=referer" target="_new">
-            <img src="https://guri.unipampa.edu.br/public/themes/moder//imgs/valid-xhtml10-blue.png"
-                 alt="Valid XHTML 1.0 Transitional" height="23" width="66">
-        </a>
-    </p>
+                                    <div class="bottom-30">
+                                        <h2 id="titulo" class="text-center font-weight-bold text-secondary app-h2">
+                                            Disponibilizar Item de Pauta</h2>
+                                        <p id="descricao"
+                                           class="text-center font-weight-bold text-secondary app-h2-description">
+                                            Disponibilize um item de pauta para ser votado pelos membros da sua
+                                            comissão.</p>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
@@ -79,7 +107,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/socket.io-client@2.2.0/dist/socket.io.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/angular-spinkit@0.3.4/build/angular-spinkit.min.js"></script>

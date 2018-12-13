@@ -49,9 +49,13 @@ function confirm_reuniao_modal(url, description, is_open) {
 
         var vm = this;
 
+        vm.itemDePauta = {};
+
         socket.on('encaminhamento', function (ev, data) {
             console.log('aqui 2!');
             console.log(data);
+
+            vm.itemDePauta = data;
         });
 
     }
@@ -99,30 +103,55 @@ function confirm_reuniao_modal(url, description, is_open) {
         }
 
         function envia() {
-            vm.data = {
-                itemId: vm.itemId,
-                encaminhamentos: vm.itensDeVoto
-            }
-
             console.log(vm.data);
 
-            $http({
-                url: 'http://localhost/votacao/instalacao-ci/index.php/set_encaminhamentos',
-                method: "POST",
-                data: {'data': vm.data}
-            })
-                .then(function (response) {
-                        console.log(response);
-                    },
-                    function (response) { // optional
-                        console.log(response);
-                    });
+            if (true) {
+                if (vm.opcao == "PADRAO") {
+                    vm.itensDeVoto = [];
+                    vm.itensDeVoto.push({id: '', descricao: "A Favor"});
+                    vm.itensDeVoto.push({id: '', descricao: "Contrário"});
+                    vm.itensDeVoto.push({id: '', descricao: "Abstenção"});
+
+                    vm.data = {
+                        itemId: vm.itemId,
+                        encaminhamentos: vm.itensDeVoto
+                    }
+
+                    $http({
+                        url: 'http://localhost/votacao/instalacao-ci/index.php/set_encaminhamentos',
+                        method: "POST",
+                        data: {'data': vm.data}
+                    })
+                        .then(function (response) {
+                                console.log(response);
+                            },
+                            function (response) { // optional
+                                console.log(response);
+                            });
+                } else if (vm.opcao == "CUSTOMIZADO") {
+                    vm.data = {
+                        itemId: vm.itemId,
+                        encaminhamentos: vm.itensDeVoto
+                    }
+
+                    $http({
+                        url: 'http://localhost/votacao/instalacao-ci/index.php/set_encaminhamentos',
+                        method: "POST",
+                        data: {'data': vm.data}
+                    })
+                        .then(function (response) {
+                                console.log(response);
+                            },
+                            function (response) { // optional
+                                console.log(response);
+                            });
+                }
+            }
         }
 
         $scope.$watch('vm.itemDeVoto', function (current, original) {
             console.log(current);
-            console.log(original)
+            console.log(original);
         });
-
     }
 })();

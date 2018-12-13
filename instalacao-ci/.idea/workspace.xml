@@ -562,9 +562,11 @@
       <file leaf-file-name="encaminhar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/encaminhar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="202" column="70" lean-forward="false" selection-start-line="202" selection-start-column="70" selection-end-line="202" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="196" column="106" lean-forward="false" selection-start-line="196" selection-start-column="106" selection-end-line="196" selection-end-column="106" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#9;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -572,8 +574,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+            <state relative-caret-position="224">
+              <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -582,8 +584,8 @@
       <file leaf-file-name="votacao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="79" />
+            <state relative-caret-position="184">
+              <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -602,28 +604,28 @@
       <file leaf-file-name="ReuniaoController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1940">
-              <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+            <state relative-caret-position="138">
+              <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemDePautaController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ItemDePautaController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/ItemDePautaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="310">
+              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Encaminhamento.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/Entity/Encaminhamento.php">
+      <file leaf-file-name="ItemDePauta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Entity/ItemDePauta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="164">
+              <caret line="221" column="52" lean-forward="false" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -650,11 +652,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tem certeza</find>
-      <find>toArray</find>
-      <find>circular</find>
-      <find>Cir</find>
-      <find>gethor</find>
       <find>overfl</find>
       <find>label</find>
       <find>socket</find>
@@ -671,7 +668,6 @@
       <find>custo</find>
       <find>as con</find>
       <find>customi</find>
-      <find>as vm</find>
       <find>custom</find>
       <find>ADD</find>
       <find>encaminhar</find>
@@ -680,6 +676,12 @@
       <find>set_encam</find>
       <find>set_encaminhamentos</find>
       <find>enviar</find>
+      <find>as vm</find>
+      <find>votacao</find>
+      <find>NG-SHOW</find>
+      <find>VotarItemDePautaController</find>
+      <find>vm</find>
+      <find>adiciona</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -724,21 +726,21 @@
         <option value="$PROJECT_DIR$/application/models/Entity/Votacao.php" />
         <option value="$PROJECT_DIR$/application/models/Entity/Urna.php" />
         <option value="$PROJECT_DIR$/application/models/Entity/Secretario.php" />
-        <option value="$PROJECT_DIR$/application/models/Entity/ItemDePauta.php" />
         <option value="$PROJECT_DIR$/application/controllers/ReuniaoNewController.php" />
         <option value="$PROJECT_DIR$/application/models/Entity/Reuniao.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/application/views/registra_reuniao.php" />
         <option value="$PROJECT_DIR$/application/views/style.css" />
-        <option value="$PROJECT_DIR$/application/views/votacao.php" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/application/views/file.php" />
         <option value="$PROJECT_DIR$/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/application/routes/web.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/Encaminhamento.php" />
+        <option value="$PROJECT_DIR$/application/models/Entity/ItemDePauta.php" />
         <option value="$PROJECT_DIR$/application/views/encaminhar.php" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/application/views/votacao.php" />
         <option value="$PROJECT_DIR$/application/controllers/ItemDePautaController.php" />
-        <option value="$PROJECT_DIR$/application/models/Entity/Encaminhamento.php" />
       </list>
     </option>
   </component>
@@ -922,12 +924,12 @@
       <workItem from="1544124247912" duration="6567000" />
       <workItem from="1544452053985" duration="2208000" />
       <workItem from="1544654737963" duration="15409000" />
-      <workItem from="1544696969090" duration="9184000" />
+      <workItem from="1544696969090" duration="14340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195246000" />
+    <option name="totallyTimeSpent" value="200402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1224,34 +1226,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/reunioes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="60" column="6" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="60" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Entity/ItemDePauta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1940">
-          <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1264,34 +1242,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/Encaminhamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/encaminhar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="202" column="70" lean-forward="false" selection-start-line="202" selection-start-column="70" selection-end-line="202" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="196" column="106" lean-forward="false" selection-start-line="196" selection-start-column="106" selection-end-line="196" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#9;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Entity/ItemDePauta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="221" column="52" lean-forward="false" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ReuniaoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ItemDePautaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Entity/Encaminhamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="310">
+          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -194,6 +194,22 @@
                                         </div>
                                     </div>
 
+                                    <div id="form:j_idt68" class="row" ng-show="vm.opcao == 'CUSTOMIZADO'">
+                                        <div id="form:j_idt69" class="col-md-12">
+                                            <div id="form:j_idt70" class="bottom-30 col-md-12 "><label
+                                                        for="form:segundo-turno" class="app-label">Votação com Segundo
+                                                    Turno? *</label>
+
+                                                <div class="pretty p-switch p-fill" style="margin-left: 20px"><input
+                                                            id="form:segundo-turno" type="checkbox"
+                                                            name="form:segundo-turno" checked="checked">
+                                                    <div class="state p-success"><label id="form:segundo-turno-label">Sim</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="row">
                                         <div class="col-md-6">
                                             <button type="button"

@@ -42,7 +42,7 @@ class ItemDePautaController extends CI_Controller
 
         $itemDePauta = $this->itemDePautaRepository->salvar($itemDePauta);
 
-        echo $itemDePauta;
+        $this->encaminharItem($itemDePauta);
 //
 //        echo $data;
 
@@ -121,12 +121,14 @@ class ItemDePautaController extends CI_Controller
 
     public function encaminharItem(\Entity\ItemDePauta $itemDePauta)
     {
-        $version = new \ElephantIO\Engine\SocketIO\Version1X("http://localhost:3001");
+        $version = new \ElephantIO\Engine\SocketIO\Version2X("http://localhost:3001");
 
         $client = new \ElephantIO\Client($version);
         $client->initialize();
-        $client->emit($this->serializaItem($itemDePauta));
+        $client->emit('encaminhamento', json_decode($this->serializaItem($itemDePauta), true));
         $client->close();
+
+        redirect('/encaminhar');
     }
 
     private function serializaItem(\Entity\ItemDePauta $itemDePauta)
