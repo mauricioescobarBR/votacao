@@ -53,14 +53,11 @@ Route::get('encaminhar', function () {
 
 Route::post('encaminha', 'ItemDePautaController@envia')->name('encaminha');
 
-<<<<<<< HEAD
 Route::get('reuniao/{id}', 'ReuniaoController@reuniao');
 
 Route::post('set_status_reuniao', 'ReuniaoController@set_status_reuniao');
 
-=======
 //Route::get('{id}/membros/{token}', 'ReuniaoController@regitraReuniao');
->>>>>>> a7ed2665a75f0a42c705e0bfe605f5a5e7b1bb0b
 Route::get('item_de_pauta/{id}', 'ItemDePautaController@item_pauta');
 
 Route::post('set_encaminhamentos', 'ItemDePautaController@set_encaminhamentos');

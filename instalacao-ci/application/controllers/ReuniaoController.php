@@ -9,11 +9,6 @@ class ReuniaoController extends CI_Controller
 {
     private $REPOSITORY;
 
-    public function __construct() {
-        parent::__construct();
-
-<<<<<<< HEAD
-=======
     public function __construct()
     {
         parent::__construct();
@@ -22,14 +17,10 @@ class ReuniaoController extends CI_Controller
 
     private function init()
     {
-        //$this->load->model('Entity/Reuniao');
->>>>>>> a7ed2665a75f0a42c705e0bfe605f5a5e7b1bb0b
         $this->load->repository('Reunioes');
         $this->load->library(array('session', 'form_validation', 'unit_test'));
         $this->load->database();
-    }
-
-<<<<<<< HEAD
+ 
         $credo = new Rougin\Credo\Credo($this->db);
         $this->REPOSITORY = $credo->get_repository('Entity\Reuniao');
     }
@@ -37,16 +28,11 @@ class ReuniaoController extends CI_Controller
     public function index()
     {
         $data['reunioes'] = $this->REPOSITORY->find_all();
-=======
-    public function index()
-    {
         $data['reunioes'] = $this->carregaTodas();
->>>>>>> a7ed2665a75f0a42c705e0bfe605f5a5e7b1bb0b
 
         $this->load->view("reunioes", $data);
     }
 
-<<<<<<< HEAD
     public function reuniao($id)
     {
         $dados['reuniao'] = $this->get_reuniao($id);
@@ -92,7 +78,7 @@ class ReuniaoController extends CI_Controller
     {
         return $this->REPOSITORY->find($id);
     }
-=======
+
     public function abrirReuniao($id)
     {
         $repository = $this->pegaRepositoryDeReuniao();
@@ -136,5 +122,5 @@ class ReuniaoController extends CI_Controller
         return $repository->find_all();
     }
 
->>>>>>> a7ed2665a75f0a42c705e0bfe605f5a5e7b1bb0b
+
 }
