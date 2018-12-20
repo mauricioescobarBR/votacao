@@ -3,11 +3,20 @@ Votação Unipampa
 
 Módulo para o sistema GURI da Unipampa para permitir a realização de votações dos encaminhamentos e proposições relacionados aos itens de pauta das reuniões do órgãos colegiados da universidade.
 
-## Requirements
+## Requisitos:
 
-* PHP 7.2 or later
+* PHP 7.2 ou maior
+* Composer
+* Hibernate
+* Mysql
+* Apache 2
 
-## Installation via Composer([packagist](https://packagist.org/packages/hhxsv5/php-sse))
+## Importando repositório através do git:
+
+
+
+
+## Installação através do Composer([packagist](https://packagist.org/packages/hhxsv5/php-sse))
 
 ```BASH
 composer require "hhxsv5/php-sse:~1.0" -vvv
