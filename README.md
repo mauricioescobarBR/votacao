@@ -1,11 +1,11 @@
 Votação Unipampa
 ======
 
-A simple and efficient library implemented HTML5's server-sent events by PHP, is used to real-time push events from server to client, and easier than Websocket, instead of AJAX request.
+Módulo para o sistema GURI da Unipampa para permitir a realização de votações dos encaminhamentos e proposições relacionados aos itens de pauta das reuniões do órgãos colegiados da universidade.
 
 ## Requirements
 
-* PHP 5.4 or later
+* PHP 7.2 or later
 
 ## Installation via Composer([packagist](https://packagist.org/packages/hhxsv5/php-sse))
 
