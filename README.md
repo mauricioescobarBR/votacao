@@ -24,6 +24,7 @@ $config['base_url'] = 'http://localhost/votacao';
 ```
 
 Para configurar o banco de dados, abra o arquivo application/config/database.php com um editor de texto e defina as configurações do banco de dados, em $db['default']. Por exemplo:
+```BASH
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
@@ -45,3 +46,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+```
