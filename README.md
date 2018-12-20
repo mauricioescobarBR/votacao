@@ -18,8 +18,9 @@ Lembre-se de importar o banco de dados da aplicação, que está na pasta raiz, 
 
 ## Configurando o CodeIgniter:
 
+Abra o arquivo application/config/config.php com um editor de texto e insira sua URL base, em $config['base_url']. Por exemplo:
 ```BASH
-cd 
+$config['base_url'] = 'http://localhost/votacao';
 ```
 
 
