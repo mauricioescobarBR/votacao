@@ -13,6 +13,9 @@ Módulo para o sistema GURI da Unipampa para permitir a realização de votaçõ
 
 ## Importando repositório através do git:
 
+```BASH
+git clone 
+```
 
 
 
