@@ -28,8 +28,8 @@ Para configurar o banco de dados, abra o arquivo application/config/database.php
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-  'username' => 'root',
-  'password' => 'root',
+  	'username' => 'root',
+  	'password' => 'root',
 	'database' => 'votacao',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
